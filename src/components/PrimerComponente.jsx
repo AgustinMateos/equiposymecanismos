@@ -1,12 +1,12 @@
-'use client'; // Necesario para componentes con estado en Next.js
+'use client'; 
 
 import { useState, useEffect } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Iconos de flechas
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; 
 
 export default function PrimerComponente() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Contenido de las 3 cards con botones
+
   const slides = [
     {
       title: "Tipos de Usuario",
@@ -34,17 +34,15 @@ export default function PrimerComponente() {
     }
   ];
 
-  // Cambio automático cada 5 segundos
+ 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // 5000ms = 5 segundos
-
-    // Limpieza del intervalo al desmontar
+    }, 5000); 
     return () => clearInterval(timer);
   }, [slides.length]);
 
-  // Funciones para las flechas
+  
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
@@ -67,14 +65,14 @@ export default function PrimerComponente() {
         Tu navegador no soporta el elemento de video.
       </video>
 
-      {/* Overlay */}
+    
       <div className="absolute inset-0 bg-black/30" />
 
-      {/* Slider */}
+     
       <div className="relative sm:w-[50%] z-10 flex items-center justify-center h-full px-4">
-        {/* Contenedor del slide con flechas */}
+        
         <div className="relative w-full max-w-md md:max-w-lg">
-          {/* Card */}
+         
           <div className="bg-black/50 p-6 h-[300px] flex justify-center items-center flex-col rounded-lg text-center text-white transition-all duration-500 ease-in-out transform relative">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {slides[currentSlide].title}
@@ -83,7 +81,7 @@ export default function PrimerComponente() {
               {slides[currentSlide].text}
             </p>
 
-            {/* Botones debajo del contenido */}
+           
             <div className="flex justify-center gap-4">
               <button
                 onClick={slides[currentSlide].buttons[0].action}
@@ -99,7 +97,7 @@ export default function PrimerComponente() {
               </button>
             </div>
 
-            {/* Flecha izquierda */}
+            
             <button
               onClick={prevSlide}
               className="absolute left-0 top-1/2 -translate-y-1/2 text-white text-2xl p-2 bg-black/50 rounded-full hover:bg-black/70 transition-colors -ml-4"
@@ -107,7 +105,7 @@ export default function PrimerComponente() {
               <FaArrowLeft />
             </button>
 
-            {/* Flecha derecha */}
+          
             <button
               onClick={nextSlide}
               className="absolute right-0 top-1/2 -translate-y-1/2 text-white text-2xl p-2 bg-black/50 rounded-full hover:bg-black/70 transition-colors -mr-4"
