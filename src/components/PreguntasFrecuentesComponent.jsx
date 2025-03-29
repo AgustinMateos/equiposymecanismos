@@ -13,7 +13,7 @@ export default function PreguntasFrecuentesComponent({ faqs }) {
   return (
     <section
       id="preguntas-frecuentes"
-      className="w-full flex flex-col justify-center items-center py-20 px-20 pb-10"
+      className="w-full flex flex-col justify-center items-center py-20 md:px-20 pb-10"
     >
       <div className="w-[80%]">
         <div className="w-full flex justify-center items-center mb-10">

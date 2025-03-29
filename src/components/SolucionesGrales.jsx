@@ -14,7 +14,7 @@ export default function SolucionesGrales({ solutions }) {
         <div className="w-full z-0 h-[50%] bg-[#cbcbcb] absolute bottom-0">
           {""}
         </div>
-        <div className="flex flex-wrap justify-start items-center max-w-[1440px] gap-[20px] z-10 bg-[#60AFFF] rounded-md">
+        <div className="flex flex-wrap justify-center md:justify-start items-center max-w-[1440px] gap-[20px] z-10 bg-[#60AFFF] rounded-md">
           {solutions.map((solucion, i) => (
             <div
               className="relative w-[220px] h-[245px] p-5 flex flex-col justify-start items-center"
