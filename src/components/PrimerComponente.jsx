@@ -72,7 +72,7 @@ export default function PrimerComponente() {
       <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative sm:w-[60%] z-10 flex items-center justify-center h-full px-4">
-        <div className="relative top-[-180px] w-full max-w-md md:max-w-lg">
+        <div className="relative top-[-180px] md:top-[0px] w-full max-w-md md:max-w-lg">
           <div className="bg-black/50 p-6 h-[300px] flex justify-center items-center flex-col rounded-lg text-center text-white transition-all duration-500 ease-in-out transform relative">
             <h1 className="text-3xl md:text-[28px] font-bold mb-4 text-left w-full px-5">
               {slides[currentSlide].title}
