@@ -5,38 +5,28 @@ import Link from "next/link";
 const Slider = () => {
   const cards = [
     {
-      image: "/sarro.webp",
-      category: "Acumulacion de Sarro",
-      subcategory:
-        "Protegé tus cañerías y electrodomésticos de obstrucciones y daños por sarro.",
+      image: "/images/productosDestacados/producto-prueba.jpeg",
+      category: "Producto 1",
       path: "",
     },
     {
-      image: "/cloro.jpg",
-      category: "Exceso de cloro",
-      subcategory:
-        "Eliminá el olor y sabor a cloro para un agua más pura y saludable.",
+      image: "/images/productosDestacados/producto-prueba.jpeg",
+      category: "Producto 2",
       path: "",
     },
     {
-      image: "/arsenico.jpg",
-      category: "Contaminantes y toxinas",
-      subcategory:
-        "Agua libre de arsénico, metales pesados y otras sustancias nocivas.",
+      image: "/images/productosDestacados/producto-prueba.jpeg",
+      category: "Prodcuto 3",
       path: "vermas",
     },
     {
-      image: "/aguacristalina.jpeg",
-      category: "Turbidez y partículas",
-      subcategory:
-        "Disfrutá de agua cristalina eliminando sedimentos y partículas en suspensión.",
+      image: "/images/productosDestacados/producto-prueba.jpeg",
+      category: "Producto 4",
       path: "ver mas",
     },
     {
-      image: "/aguafamilia.jpg",
+      image: "/images/productosDestacados/producto-prueba.jpeg",
       category: "Microorganismos y bacterias",
-      subcategory:
-        "Eliminá bacterias y asegurá agua segura para toda tu familia.",
       path: "ver mas",
     },
   ];
@@ -61,28 +51,31 @@ const Slider = () => {
   return (
     <div className="flex items-center max-w-6xl mx-auto py-5 mt-[60px] md:mt-[0px] mb-[210px] md:mb-[0px] h-auto md:h-[500px]">
       <button
-        className="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900 transition-colors"
+        className="bg-[#60AFFF] text-white p-3 rounded-full hover:bg-gray-900 transition-colors"
         onClick={handlePrev}
       >
         ❮
       </button>
 
-      <div className="flex overflow-hidden w-full gap-4 px-4 md:px-[70px]">
+      <div className="flex overflow-hidden py-20 w-full gap-4 px-4 md:px-[70px]">
         {visibleSlides.map((card, index) => (
           <div
             key={index}
-            className="w-4/4 sm:w-2/4 md:w-1/4 flex-shrink-0 transition-transform duration-300 bg-white border rounded-lg shadow-md overflow-hidden"
+            className="w-4/4 sm:w-2/4 md:w-1/4 flex-shrink-0 transition-transform duration-300 bg-white border-gray-500 rounded-lg shadow-md overflow-hidden relative"
           >
-            <img src={card.image} className="w-full h-48 object-cover" />
+            <img src={card.image} className="w-full h-64 object-cover" />
             <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-800 h-[60px]">
+              <h3 className="text-[14px] text-center w-full text-[#555555] font-semibold mb-5">
                 {card.category}
               </h3>
-              <p className="text-sm text-gray-600 h-[70px]">
+              {/* <p className="text-sm text-gray-600 h-[70px]">
                 {card.subcategory}
-              </p>
-              <Link href={card.path}>
-                <button className="mt-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+              </p> */}
+              <Link
+                className="absolute left-0 bottom-2 w-full flex justify-center items-center"
+                href={card.path}
+              >
+                <button className="w-full text-center text-[#60AFFF] text-[14px]">
                   Ver más
                 </button>
               </Link>
@@ -92,7 +85,7 @@ const Slider = () => {
       </div>
 
       <button
-        className="bg-gray-800 ml-[10px] text-white p-3 rounded-full hover:bg-gray-900 transition-colors"
+        className="bg-[#60AFFF] ml-[10px] text-white p-3 rounded-full hover:bg-gray-900 transition-colors"
         onClick={handleNext}
       >
         ❯
