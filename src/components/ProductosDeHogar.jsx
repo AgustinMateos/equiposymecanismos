@@ -30,10 +30,10 @@ const ProductosDeHogar = ({
   }, []);
 
   return (
-    <section className="px-20 2xl:px-40 w-full flex justify-center items-center">
-      <div className="w-full py-20 flex flex-col justify-center items-center">
+    <section className="md:px-20 px-5 2xl:px-40 w-full flex justify-center items-center">
+      <div className="w-full py-10 md:py-20 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center w-full mb-10">
-          <h3 className="w-full text-center text-3xl font-bold">
+          <h3 className="w-full text-center text-3xl font-bold mb-5">
             {subTitle} <span className="text-[#60AFFF]">{spanSubtitle}</span>
           </h3>
           <h3 className="w-full text-center text-3xl font-bold">
@@ -41,8 +41,8 @@ const ProductosDeHogar = ({
           </h3>
         </div>
         <div className="w-full flex flex-col justify-center items-center 2xl:w-[80%]">
-          <nav className="w-full flex flex-col justify-center items-center mb-10">
-            <ul className="flex gap-[5px] justify-between items-center w-fit mb-5">
+          <nav className="w-full flex flex-col flex-row lg:flex-col gap-[10px] sm:gap-[20px] lg:gap-[0px] justify-center items-start lg:items-center mb-10">
+            <ul className="flex flex-col lg:flex-row gap-[5px] justify-between items-center w-fit mb-5">
               <li
                 className={
                   activeCategory === "Filtración"
@@ -122,7 +122,7 @@ const ProductosDeHogar = ({
                 Membranas y portamembranas
               </li>
             </ul>
-            <ul className="flex gap-[5px] justify-between items-center w-fit">
+            <ul className="flex gap-[5px] justify-between items-center w-fit flex-col lg:flex-row">
               <li
                 className={
                   activeCategory === "Instrumentación y control"
@@ -203,12 +203,16 @@ const ProductosDeHogar = ({
               </li>
             </ul>
           </nav>
-          <div className="w-full flex gap-[10px] flex-wrap justify-start 2xl:justify-center items-center xl:w-[85%]">
+          <div className="w-full md:justify-center flex sm:gap-[10px] gap-[5px] flex-wrap justify-center md:justify-start 2xl:justify-center items-center xl:w-[85%]">
             {products.map((product) => (
               <div key={product.id} className="product-card">
                 <div className="w-full flex justify-center items-center gap-[10px]">
                   <div className="flex justify-center items-center w-[30%]">
-                    <img src={product.imagen} alt="" />
+                    <img
+                      className="product-card-img"
+                      src={product.imagen}
+                      alt=""
+                    />
                   </div>
                   <div className="flex flex-col justify-start items-start w-[70%]">
                     <h3 className="w-full text-left text-[18px] font-bold mb-5">

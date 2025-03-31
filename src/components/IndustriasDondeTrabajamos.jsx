@@ -10,16 +10,16 @@ export default function IndustriasDondeTrabajamos({
 
   return (
     <>
-      <h3 className="px-20 xl:px-40 2xl:px-60 w-full text-left font-bold mb-2 text-3xl text-[black]">
+      <h3 className="px-10 sm:px-20 xl:px-40 2xl:px-60 w-full text-left font-bold mb-2 text-2xl sm:text-3xl text-[black]">
         {sectionTitle} <span className="text-[#3066BE]">{spanTitle}</span>
       </h3>
-      <section className="w-full flex justify-center items-center py-10 px-20 2xl:px-60 xl:px-40 bg-[#3066BE]">
+      <section className="w-full flex justify-center items-center py-10 sm:px-20 px-10 2xl:px-60 xl:px-40 bg-[#3066BE]">
         <div className="w-full h-full flex flex-col justify-start items-start py-10">
-          <div className="w-full flex gap-[15px] justify-between items-start mb-10">
+          <div className="w-full flex flex-col md:flex-row sm:gap-[15px] gap-[5px] justify-between items-start mb-10">
             {data.map((item) => {
               return (
                 <div
-                  className="w-[30%] flex flex-col justify-start items-start text-white"
+                  className="md:w-[30%] w-full flex flex-col justify-start items-start text-white mb-10"
                   key={item.id}
                 >
                   <div className="flex justify-center gap-[5px] items-center mb-5">

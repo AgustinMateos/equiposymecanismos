@@ -82,48 +82,48 @@ export default function PrimerComponente() {
 
       <div className="absolute inset-0 bg-black/30" />
 
-      <div className="relative sm:w-[60%] z-10 flex items-center justify-center h-full px-4">
-        <div className="relative w-full max-w-lg md:max-w-xl">
-          <div className="bg-black/50 p-6 h-[300px] flex justify-center items-center flex-col rounded-lg text-center text-white transition-all duration-500 ease-in-out transform relative">
+      <div className="relative lg:w-[60%] sm:w-[100%] z-10 flex items-center justify-center h-full px-4">
+        <div className="relative w-full max-w-xl md:max-w-xl">
+          <div className="bg-black/50 p-6 md:h-[300px] h-[450px] flex justify-center items-center flex-col rounded-lg text-center text-white transition-all duration-500 ease-in-out transform relative">
             {currentSlide === 0 ? (
               <>
-                <h2 className="text-3xl md:text-[24px] font-bold mb-4 text-left w-full px-5">
+                <h2 className="text-2xl sm:text-3xl md:text-[24px] font-bold mb-4 text-left w-full md:px-5 pr-0 pl-5">
                   <span className="text-[#60AFFF]">
                     {slides[currentSlide].span}
                   </span>
                   {slides[currentSlide].title}
                 </h2>
-                <p className="text-[12px] md:text-base px-5 mb-6 text-left w-full">
+                <p className="text-[14px] md:text-base px-5 mb-6 text-left w-full">
                   {slides[currentSlide].text}
                 </p>
               </>
             ) : currentSlide === 1 ? (
               <>
-                <h2 className="text-3xl md:text-[24px] font-bold mb-4 text-left w-full px-5">
+                <h2 className="text-2xl sm:text-3xl md:text-[24px] font-bold mb-4 text-left w-full px-5">
                   {slides[currentSlide].title}{" "}
                   <span className="text-[#60AFFF]">
                     {slides[currentSlide].span}
                   </span>
                 </h2>
-                <p className="text-[12px] md:text-base px-5 mb-6 text-left w-full">
+                <p className="text-[14px] md:text-base px-5 mb-6 text-left w-full">
                   {slides[currentSlide].text}
                 </p>
               </>
             ) : (
               <>
-                <h2 className="text-3xl md:text-[24px] font-bold mb-4 text-left w-full px-5">
+                <h2 className="text-2xl sm:text-3xl md:text-[24px] font-bold mb-4 text-left w-full px-5">
                   <span className="text-[#60AFFF]">
                     {slides[currentSlide].span}
                   </span>
                   {slides[currentSlide].title}
                 </h2>
-                <p className="text-[12px] md:text-base px-5 mb-6 text-left w-full">
+                <p className="text-[14px] md:text-base px-5 mb-6 text-left w-full">
                   {slides[currentSlide].text}
                 </p>
               </>
             )}
 
-            <div className="flex justify-start gap-4 w-full pl-5">
+            <div className="flex flex-col sm:flex-row justify-start gap-4 w-full pl-5">
               <button
                 onClick={slides[currentSlide].buttons[0].action}
                 className={

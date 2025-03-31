@@ -9,7 +9,7 @@ import PreguntasFrecuentesComponent from "@/components/PreguntasFrecuentesCompon
 import DondeEncontrarnos from "@/components/DondeEncontrarnos";
 import Footer from "@/components/generals/Footer";
 import HistoriaComponent from "@/components/HistoriaComponent";
-import ProductosDeHogar from "@/components/generals/ProductosDeHogar";
+import ProductosDeHogar from "@/components/ProductosDeHogar";
 import ProblemasEnHogar from "@/components/ProblemasEnHogar";
 import Link from "next/link";
 import IndustriasDondeTrabajamos from "@/components/IndustriasDondeTrabajamos";
@@ -395,8 +395,8 @@ export default function Home() {
       <ProductosDeHogar
         title="Productos para la "
         spanTitle="industria"
-        subTitle="Optimiza tus procesos industriales con "
-        spanSubtitle="nuestros productos"
+        subTitle="Optimiza tus "
+        spanSubtitle="procesos industriales"
         data={productosHogar}
       />
       <IndustriasDondeTrabajamos

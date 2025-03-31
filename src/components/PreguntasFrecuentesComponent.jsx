@@ -13,11 +13,13 @@ export default function PreguntasFrecuentesComponent({ faqs }) {
   return (
     <section
       id="preguntas-frecuentes"
-      className="w-full flex flex-col justify-center items-center py-20 px-20 pb-10"
+      className="w-full flex flex-col justify-center items-center py-20 sm:px-20 px-5 pb-10"
     >
-      <div className="w-[80%] flex flex-col justify-center items-center">
+      <div className="sm:w-[80%] w-full flex flex-col justify-center items-center">
         <div className="w-full flex justify-center items-center mb-10">
-          <h3 className="w-full text-center text-4xl">Preguntas Frecuentes</h3>
+          <h3 className="w-full text-center md:text-4xl text-3xl">
+            Preguntas Frecuentes
+          </h3>
         </div>
         <div className="flex flex-col w-full 2xl:w-[80%] justify-center items-center">
           {faqs.map((pregunta) => (
