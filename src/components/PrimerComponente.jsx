@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -8,33 +9,43 @@ export default function PrimerComponente() {
 
   const slides = [
     {
-      title: "Soluciones para la purificación y ablandamiento de agua",
-      text: "Contamos con soluciones para tu hogar y para la industria",
+      title: ": soluciones para tu hogar e industria",
+      span: "Agua pura, cuidado seguro",
+      text: "Evitá daños en cañerías, electrodomésticos y agua de baja calidad. Nuestros sistemas de filtración, ablandamiento y potabilización protegen tu hogar y mejoran procesos industriales.",
       buttons: [
-        { text: "Hogar", action: () => console.log("Ver más - Slide 1") },
         {
-          text: "Industria",
+          text: "Soluciones para el Hogar",
+          action: () => console.log("Ver más - Slide 1"),
+          link: "/#tratamientos-para-el-hogar",
+        },
+        {
+          text: "Soluciones para la Industria",
           action: () => console.log("Registrarse - Slide 1"),
+          link: "/#tratamientos-para-la-industria",
         },
       ],
     },
     {
-      title: "¿Quiénes somos?",
-      text: "Somos una empresa con más de 50 años de trayectoria en la ingeniería del agua",
+      title: "Más de 30 años llevando agua pura a ",
+      span: " hogares e industrias",
+      text: " Brindamos soluciones que cuidan de tu familia y optimizan tu industria ahorrandote tiempo y dinero. Con años de experiencia y un equipo de especialistas, garantizamos agua pura y segura.",
       buttons: [
         {
-          text: "Sobre nosotros",
+          text: " Conócenos",
           action: () => console.log("Explorar - Slide 2"),
+          link: "/#sobre-nosotros",
         },
       ],
     },
     {
-      title: "Encontrá la solución perfecta para vos",
-      text: "Contamos con una amplia variedad de productos para solucionar tus necesidades.",
+      title: "para un agua más pura",
+      span: "Tecnología avanzada ",
+      text: "Soluciones innovadoras para el hogar y la industria. Conocé nuestros productos destacados y lleva la mejor calidad de agua a tu vida.",
       buttons: [
         {
           text: "Productos destacados",
           action: () => console.log("Comprar - Slide 3"),
+          link: "/#productos-destacados",
         },
       ],
     },
@@ -43,7 +54,7 @@ export default function PrimerComponente() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 15000);
     return () => clearInterval(timer);
   }, [slides.length]);
 
@@ -72,14 +83,45 @@ export default function PrimerComponente() {
       <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative sm:w-[60%] z-10 flex items-center justify-center h-full px-4">
-        <div className="relative w-full max-w-md md:max-w-lg">
+        <div className="relative w-full max-w-lg md:max-w-xl">
           <div className="bg-black/50 p-6 h-[300px] flex justify-center items-center flex-col rounded-lg text-center text-white transition-all duration-500 ease-in-out transform relative">
-            <h1 className="text-3xl md:text-[28px] font-bold mb-4 text-left w-full px-5">
-              {slides[currentSlide].title}
-            </h1>
-            <p className="text-xl md:text-base px-5 mb-6 text-left w-full">
-              {slides[currentSlide].text}
-            </p>
+            {currentSlide === 0 ? (
+              <>
+                <h2 className="text-3xl md:text-[24px] font-bold mb-4 text-left w-full px-5">
+                  <span className="text-[#60AFFF]">
+                    {slides[currentSlide].span}
+                  </span>
+                  {slides[currentSlide].title}
+                </h2>
+                <p className="text-[12px] md:text-base px-5 mb-6 text-left w-full">
+                  {slides[currentSlide].text}
+                </p>
+              </>
+            ) : currentSlide === 1 ? (
+              <>
+                <h2 className="text-3xl md:text-[24px] font-bold mb-4 text-left w-full px-5">
+                  {slides[currentSlide].title}{" "}
+                  <span className="text-[#60AFFF]">
+                    {slides[currentSlide].span}
+                  </span>
+                </h2>
+                <p className="text-[12px] md:text-base px-5 mb-6 text-left w-full">
+                  {slides[currentSlide].text}
+                </p>
+              </>
+            ) : (
+              <>
+                <h2 className="text-3xl md:text-[24px] font-bold mb-4 text-left w-full px-5">
+                  <span className="text-[#60AFFF]">
+                    {slides[currentSlide].span}
+                  </span>
+                  {slides[currentSlide].title}
+                </h2>
+                <p className="text-[12px] md:text-base px-5 mb-6 text-left w-full">
+                  {slides[currentSlide].text}
+                </p>
+              </>
+            )}
 
             <div className="flex justify-start gap-4 w-full pl-5">
               <button
@@ -88,14 +130,21 @@ export default function PrimerComponente() {
                   "px-4 py-2 hover:bg-gray-200 transition-colors btn-principal"
                 }
               >
-                {slides[currentSlide].buttons[0].text}
+                <Link
+                  className="w-full h-full"
+                  href={slides[currentSlide].buttons[0].link}
+                >
+                  {slides[currentSlide].buttons[0].text}
+                </Link>
               </button>
               {slides[currentSlide].buttons[1] && (
                 <button
                   onClick={slides[currentSlide].buttons[1].action}
                   className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200 transition-colors btn-secundario"
                 >
-                  {slides[currentSlide].buttons[1].text}
+                  <Link href={slides[currentSlide].buttons[1].link}>
+                    {slides[currentSlide].buttons[1].text}
+                  </Link>
                 </button>
               )}
             </div>

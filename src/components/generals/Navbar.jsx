@@ -45,7 +45,7 @@ const Navbar = () => {
     >
       <div className="w-full max-w-7xl mx-auto flex flex-row justify-between items-center h-full px-4">
         <div>
-          <h1 className="text-xl font-bold">Equipos y Mecanismos</h1>
+          <h1 className="text-xl font-bold">EQUIPOS Y MECANISMOS</h1>
         </div>
 
         <div className="hidden md:flex flex-row items-center">

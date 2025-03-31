@@ -143,3 +143,50 @@ footer{
   margin-top: 5px;
 }
 
+/*Whats app*/
+
+.whatsapp-icon{
+  z-index: 999!important;
+}
+
+
+/*--------------------------------Product Categories Components---------------------------------*/
+.product-card{
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: solid 1px #cbcbcb;
+  width: 350px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productNavbar-link-active{
+  transition: all .2s;
+  background:#60AFFF ;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+
+}
+
+.productNavbar-link{
+  background:#60AFFF30 ;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.link-a-producto{
+  color: #60AFFF;
+  text-decoration: underline;
+}

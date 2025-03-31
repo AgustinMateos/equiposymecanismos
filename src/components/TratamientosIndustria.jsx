@@ -10,7 +10,7 @@ export default function TratamientosIndustria({
   return (
     <section
       id="tratamientos-para-la-industria"
-      className="w-full py-10 px-20 flex justify-center items-center "
+      className="w-full py-10 px-20 2xl:px-60 flex justify-center items-center "
     >
       <div className="w-full flex justify-center items-center gap-[50px]">
         <div className="w-[50%] flex justify-center items-center">

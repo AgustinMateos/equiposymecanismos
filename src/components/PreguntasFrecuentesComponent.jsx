@@ -15,11 +15,11 @@ export default function PreguntasFrecuentesComponent({ faqs }) {
       id="preguntas-frecuentes"
       className="w-full flex flex-col justify-center items-center py-20 px-20 pb-10"
     >
-      <div className="w-[80%]">
+      <div className="w-[80%] flex flex-col justify-center items-center">
         <div className="w-full flex justify-center items-center mb-10">
           <h3 className="w-full text-center text-4xl">Preguntas Frecuentes</h3>
         </div>
-        <div className="flex flex-col w-full justify-center items-center">
+        <div className="flex flex-col w-full 2xl:w-[80%] justify-center items-center">
           {faqs.map((pregunta) => (
             <div key={pregunta.id} className="item w-full">
               <div className="title" onClick={() => toggle(pregunta.id)}>
