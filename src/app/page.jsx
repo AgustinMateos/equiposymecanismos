@@ -13,6 +13,7 @@ import ProductosDeHogar from "@/components/ProductosDeHogar";
 import ProblemasEnHogar from "@/components/ProblemasEnHogar";
 import Link from "next/link";
 import IndustriasDondeTrabajamos from "@/components/IndustriasDondeTrabajamos";
+import Slider from "@/components/Slider";
 
 //Imagenes
 
@@ -371,7 +372,7 @@ export default function Home() {
       {/* <div className="w-full px-10 py-10 h-[450px]">
         <ProductsSlider data={productosDestacados} />
       </div> */}
-
+      <Slider />
       <TratamientosHogar
         titulo="Soluciones eficientes para el tratamiento de agua en el hogar"
         subtitulo="Agua pura para tu hogar, bienestar para tu familia"
