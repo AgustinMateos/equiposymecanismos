@@ -1,12 +1,41 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function SolucionesGrales({ solutions }) {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Deja de observar una vez que se activa
+        }
+      },
+      {
+        threshold: 0.1, // Se activa cuando el 10% del elemento es visible
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section id="soluciones">
+    <section id="soluciones" ref={sectionRef}>
       <div className="xl:h-[400px] lg:h-[690px] flex flex-col justify-center items-center w-full py-10 relative">
         <div className="w-full flex justify-center items-center py-5">
-          <h2 className=" w-full text-center h-full text-3xl text-[#60AFFF] px-10">
+          <h2 className="w-full text-center h-full text-3xl text-[#60AFFF] px-10">
             BRINDAMOS SOLUCIONES
           </h2>
         </div>
@@ -17,8 +46,11 @@ export default function SolucionesGrales({ solutions }) {
         <div className="flex flex-wrap justify-start lg:justify-center items-center lg:py-10 lg:w-[95%] max-w-[1440px] xl:gap-[10px] lg:gap-[5px] z-0 bg-[#60AFFF] rounded-md solucionesGrales-container">
           {solutions.map((solucion, i) => (
             <div
-              className="relative w-[220px] h-[245px] p-5 flex flex-col justify-start items-center"
+              className={`relative w-[220px] h-[245px] p-5 flex flex-col justify-start items-center ${
+                isVisible ? "fade-in" : "opacity-0"
+              }`}
               key={i}
+              style={{ animationDelay: `${i * 0.2}s` }}
             >
               <img
                 width={"50px"}
