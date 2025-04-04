@@ -372,7 +372,13 @@ export default function Home() {
       {/* <div className="w-full px-10 py-10 h-[450px]">
         <ProductsSlider data={productosDestacados} />
       </div> */}
-      <Slider />
+      <div className="w-full flex flex-col justify-center items-center pt-10 pb-0">
+        <h2 className="w-full text-center text-3xl text-[#60AFFF]">
+          Productos Destacados
+        </h2>
+        <Slider />
+      </div>
+
       <TratamientosHogar
         titulo="Soluciones eficientes para el tratamiento de agua en el hogar"
         subtitulo="Agua pura para tu hogar, bienestar para tu familia"

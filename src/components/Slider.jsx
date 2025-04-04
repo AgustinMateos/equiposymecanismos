@@ -57,7 +57,7 @@ const Slider = () => {
         ❮
       </button>
 
-      <div className="flex overflow-hidden py-20 w-full gap-4 px-4 md:px-[70px]">
+      <div className="flex overflow-hidden py-5 w-full gap-4 px-4 md:px-[70px]">
         {visibleSlides.map((card, index) => (
           <div
             key={index}

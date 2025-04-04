@@ -10,7 +10,7 @@ export default function TratamientosHogar({
   return (
     <section
       id="tratamientos-para-el-hogar"
-      className="w-full py-10 sm:py-20 sm:px-20 px-10 2xl:px-60 flex justify-center items-center "
+      className="w-full py-5 sm:py-10 sm:px-20 px-10 2xl:px-60 flex justify-center items-center "
     >
       <div className="w-full flex justify-center items-center gap-[50px] md:gap-[10px] flex-col md:flex-row">
         <div className="md:w-[50%] flex justify-center items-center w-full">
