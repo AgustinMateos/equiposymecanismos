@@ -46,15 +46,15 @@ const Slider = () => {
     );
   };
 
-  // Agregar efecto para rotación automática
+  
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000); // Cambia cada 3 segundos (ajusta este valor según prefieras)
+    }, 3000); 
 
-    // Limpieza del intervalo cuando el componente se desmonta
+   
     return () => clearInterval(interval);
-  }, [currentIndex]); // Se ejecuta cuando cambia currentIndex
+  }, [currentIndex]); 
 
   const visibleSlides = cards.slice(currentIndex, currentIndex + visibleImages);
 
