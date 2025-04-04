@@ -211,23 +211,23 @@ footer{
 
 .scale-fade-in {
   opacity: 0;
-  transform: scale(0.8); /* Comienza más pequeño */
+  transform: scale(0.8); 
   animation: scaleFadeIn 0.5s ease-in forwards;
 }
 
 @keyframes scaleFadeIn {
   from {
     opacity: 0;
-    transform: scale(0.8); /* Escala inicial */
+    transform: scale(0.8); 
   }
   to {
     opacity: 1;
-    transform: scale(1); /* Escala final */
+    transform: scale(1);
   }
 }
 
 .scale-0 {
-  transform: scale(0.8); /* Estado inicial antes de la animación */
+  transform: scale(0.8); 
 }
 
 

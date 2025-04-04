@@ -34,11 +34,11 @@ const ProductosDeHogar = ({
         const [entry] = entries;
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Deja de observar una vez que se activa
+          observer.disconnect(); 
         }
       },
       {
-        threshold: 0.1, // Se activa cuando el 10% del elemento es visible
+        threshold: 0.1, 
       }
     );
 
@@ -237,7 +237,7 @@ const ProductosDeHogar = ({
                 className={`product-card ${
                   isVisible ? "scale-fade-in" : "opacity-0 scale-0"
                 }`}
-                style={{ animationDelay: `${i * 0.2}s` }} // Retraso progresivo
+                style={{ animationDelay: `${i * 0.2}s` }} 
               >
                 <div className="w-full flex justify-center items-center gap-[10px]">
                   <div className="flex justify-center items-center w-[30%]">
