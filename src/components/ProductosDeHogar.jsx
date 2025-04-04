@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const ProductosDeHogar = ({
   title,
@@ -9,14 +9,13 @@ const ProductosDeHogar = ({
   spanSubtitle,
   data,
 }) => {
-  console.log("data: ", data);
-
-  const [activeCategory, setActiveCategory] = React.useState("Filtración");
-  const [products, setProducts] = React.useState([]);
+  const [activeCategory, setActiveCategory] = useState("Filtración");
+  const [products, setProducts] = useState([]);
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
 
   const filtrarProductos = (category) => {
     console.log("Category: ", category);
-
     const filteredProducts = data.filter(
       (product) => product.categoria === category
     );
@@ -24,13 +23,41 @@ const ProductosDeHogar = ({
     setProducts(filteredProducts);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     console.log("State: ", products);
     filtrarProductos("Filtración");
   }, []);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Deja de observar una vez que se activa
+        }
+      },
+      {
+        threshold: 0.1, // Se activa cuando el 10% del elemento es visible
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="md:px-20 px-5 2xl:px-40 w-full flex justify-center items-center">
+    <section
+      ref={sectionRef}
+      className="md:px-20 px-5 2xl:px-40 w-full flex justify-center items-center"
+    >
       <div className="w-full py-10 md:py-20 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center w-full mb-10">
           <h3 className="w-full text-center text-3xl font-bold mb-5">
@@ -204,8 +231,14 @@ const ProductosDeHogar = ({
             </ul>
           </nav>
           <div className="w-full md:justify-center flex sm:gap-[10px] gap-[5px] flex-wrap justify-center md:justify-start 2xl:justify-center items-center xl:w-[85%]">
-            {products.map((product) => (
-              <div key={product.id} className="product-card">
+            {products.map((product, i) => (
+              <div
+                key={product.id}
+                className={`product-card ${
+                  isVisible ? "scale-fade-in" : "opacity-0 scale-0"
+                }`}
+                style={{ animationDelay: `${i * 0.2}s` }} // Retraso progresivo
+              >
                 <div className="w-full flex justify-center items-center gap-[10px]">
                   <div className="flex justify-center items-center w-[30%]">
                     <img
