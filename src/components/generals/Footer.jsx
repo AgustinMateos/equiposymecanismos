@@ -1,49 +1,113 @@
+"use client";
+import montserrat from "@/app/fonts/fonts";
 import Link from "next/link";
 import React from "react";
+//Animaciones
+import { motion } from "framer-motion";
+
+const socialIconsVariant = {
+  hover: {
+    scale: 1.1,
+    transition: {
+      duration: 0.5,
+      type: "spring",
+    },
+  },
+};
 
 const Footer = ({}) => {
   return (
-    <footer className="w-full flex flex-col bg-[black]">
-      <div className="flex gap-[25px] w-full justify-start items-center">
-        <div className="w-[20%] flex flex-col justify-center items-center">
-          <div>
-            <p>Logo</p>
-          </div>
-          <div>
-            <p>Slogan</p>
+    <footer className={`w-full flex flex-col p-3 ${montserrat.className}`}>
+      <div className="text-white flex flex-col justify-start items-center bg-[#2A5AA7] w-full h-full rounded-[10px] p-5">
+        <div className="footer-info-container pb-10 w-full flex justify-center items-start gap-[25px]">
+          <div className="flex gap-[30px] w-[90%] justify-between items-start">
+            <div>
+              <ul>
+                <li className="font-bold mb-[10px]">
+                  <strong>Soluciones</strong>
+                </li>
+                <li className="mb-[5px]">
+                  <Link href="/#tratamientos-para-el-hogar">Hogar</Link>
+                </li>
+                <li>
+                  <Link href="/#tratamientos-para-la-industria">Industria</Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li className="font-bold mb-[10px]">
+                  <strong>Productos</strong>
+                </li>
+                <li className="mb-[5px]">
+                  <Link href="/#productos">Todos los productos</Link>
+                </li>
+                <li>
+                  <Link href="/#productos-destacados">
+                    Productos destacados
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li className="font-bold mb-[10px]">
+                  <strong>Empresa</strong>
+                </li>
+                <li className="mb-[5px]">
+                  <Link href="/#sobre-nosotros">Sobre nosotros</Link>
+                </li>
+                <li>
+                  <Link href="/#preguntas-frecuentes">
+                    Preguntas frecuentes
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li className="font-bold mb-[10px]">
+                  <strong>Mail</strong>
+                </li>
+                <li className="mb-[10px]">
+                  <Link href="/"></Link>info@equiposymecanismos.com.ar
+                </li>
+                <li className="font-bold mb-[10px]">
+                  <strong>Teléfono</strong>
+                </li>
+                <li>1132879402</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold mb-[10px]">
+                <strong>Nuestras redes</strong>
+              </h4>
+              <ul className="flex gap-[5px] justfy-center items-center w-full flex justify-center gap-[20px] items-center">
+                <motion.li variants={socialIconsVariant} whileHover="hover">
+                  <Link href="/">
+                    <img
+                      className="footer-social-icon"
+                      src="/icons/footer/facebook.png"
+                      alt=""
+                    />
+                  </Link>
+                </motion.li>
+                <motion.li variants={socialIconsVariant} whileHover="hover">
+                  <Link href="/">
+                    <img
+                      className="footer-social-icon"
+                      src="/icons/footer/instagram.png"
+                      alt=""
+                    />
+                  </Link>
+                </motion.li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="flex gap-[10px] justify-center items-center w-[60%]">
-          <div>
-            <ul>
-              <li>Menu 1</li>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>Menu 2</li>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <h4>Redes</h4>
-          <ul className="flex gap-[5px] justfy-center items-center">
-            <li>Red 1</li>
-            <li>Red 2</li>
-            <li>Red 3</li>
-            <li>Red 4</li>
-          </ul>
-        </div>
-      </div>
-      <div>
         <div></div>
       </div>
+      <div></div>
     </footer>
   );
 };

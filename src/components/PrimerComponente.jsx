@@ -1,5 +1,6 @@
 "use client";
 
+import montserrat from "@/app/fonts/fonts";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -84,10 +85,14 @@ export default function PrimerComponente() {
 
       <div className="relative lg:w-[60%] sm:w-[100%] z-10 flex items-center justify-center h-full px-4">
         <div className="relative w-full max-w-xl md:max-w-xl">
-          <div className="bg-black/50 p-6 md:h-[300px] h-[450px] flex justify-center items-center flex-col rounded-lg text-center text-white transition-all duration-500 ease-in-out transform relative">
+          <div
+            className={`${montserrat.className} bg-black/50 p-6 md:h-[300px] h-[450px] flex justify-center items-center flex-col rounded-lg text-center text-white transition-all duration-500 ease-in-out transform relative`}
+          >
             {currentSlide === 0 ? (
               <>
-                <h2 className="text-2xl sm:text-3xl md:text-[24px] font-bold mb-4 text-left w-full md:px-5 pr-0 pl-5">
+                <h2
+                  className={`${montserrat.className} text-2xl sm:text-3xl md:text-[24px] font-bold mb-4 text-left w-full md:px-5 pr-0 pl-5`}
+                >
                   <span className="text-[#60AFFF]">
                     {slides[currentSlide].span}
                   </span>
@@ -127,7 +132,7 @@ export default function PrimerComponente() {
               <button
                 onClick={slides[currentSlide].buttons[0].action}
                 className={
-                  "px-4 py-2 hover:bg-gray-200 transition-colors btn-principal"
+                  "px-4 py-2 hover:bg-gray-200 transition-colors btn-principal text-[14px]"
                 }
               >
                 <Link
@@ -140,7 +145,7 @@ export default function PrimerComponente() {
               {slides[currentSlide].buttons[1] && (
                 <button
                   onClick={slides[currentSlide].buttons[1].action}
-                  className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200 transition-colors btn-secundario"
+                  className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200 transition-colors btn-secundario text-[14px]"
                 >
                   <Link href={slides[currentSlide].buttons[1].link}>
                     {slides[currentSlide].buttons[1].text}

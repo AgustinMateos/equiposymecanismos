@@ -1,19 +1,20 @@
 //Local Components
 import PrimerComponente from "@/components/PrimerComponente";
-import Navbar from "@/components/generals/Navbar";
+
 import SolucionesGrales from "@/components/SolucionesGrales";
 import TratamientosHogar from "@/components/TratamientosHogar";
 import TratamientosIndustria from "@/components/TratamientosIndustria";
 import SobreNosotros from "@/components/SobreNosotros";
 import PreguntasFrecuentesComponent from "@/components/PreguntasFrecuentesComponent";
 import DondeEncontrarnos from "@/components/DondeEncontrarnos";
-import Footer from "@/components/generals/Footer";
+
 import HistoriaComponent from "@/components/HistoriaComponent";
 import ProductosDeHogar from "@/components/ProductosDeHogar";
 import ProblemasEnHogar from "@/components/ProblemasEnHogar";
 import Link from "next/link";
 import IndustriasDondeTrabajamos from "@/components/IndustriasDondeTrabajamos";
 import Slider from "@/components/Slider";
+import montserrat from "./fonts/fonts";
 
 //Imagenes
 
@@ -64,24 +65,22 @@ const solucionesGrales = [
 const preguntasFrecuentesData = [
   {
     id: 1,
-    pregunta: "¿Cómo funciona la publicidad móvil en vehículos?",
+    pregunta: "¿Cómo funcionan las entregas de los productos?",
     respuesta: "Lorem Ipsum",
   },
   {
     id: 2,
-    pregunta: "¿Cómo puedo medir el éxito de mi campaña en su plataforma?",
+    pregunta: "¿En qué ciudad puedo recibir mi pedido?",
     respuesta: "Lorem Ipsum",
   },
   {
     id: 3,
-    pregunta:
-      "¿Puedo personalizar la ubicación y el público objetivo de mi anuncio?",
+    pregunta: "¿Existen descuentos para empresas y particulares?",
     respuesta: "Lorem Ipsum",
   },
   {
     id: 4,
-    pregunta:
-      "¿Cuál es el proceso para comenzar a anunciarse con su plataforma?",
+    pregunta: "¿Cómo se manejan las devoluciones de producto por fallas?",
     respuesta: "Lorem Ipsums",
   },
 ];
@@ -89,87 +88,58 @@ const preguntasFrecuentesData = [
 const productosDestacados = [
   {
     id: 1,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
+    image: "/images/productosDestacados/ablandador-de-agua.jpg",
+    title: "Ablandadores de agua",
+    path: "/productos/ablandadores-automaticos-de-agua",
   },
   {
     id: 2,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
+    image: "/images/Productos/valvula-de-control-para-ablandamiento.png",
+    title: "Válvulas de control",
+    path: "/productos/valvula-de-control-para-ablandamiento",
   },
   {
     id: 3,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
+    image:
+      "/images/Productos/tanques-de-plastico-reforzado-con-fibra-de-vidrio.png",
+    title: "Tanques PRFV",
+    path: "/productos/tanques-con-plastico-reforzado-con-fibra-de-vidrio",
   },
   {
     id: 4,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
+    image: "/images/Productos/portamembranas-de-4-de-agua-dulce.png",
+    title: 'Portamembranas de 4"- Agua dulce',
+    path: "/productos/portamembranas-de-4-agua-dulce",
   },
   {
     id: 5,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
+    image: "/images/Productos/bomba-dosificadora-automatica.png",
+    title: "Bombas Dosificadoras automáticas",
+    path: "/productos/bombas-dosificadoras-automaticas",
   },
   {
     id: 6,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
+    image: "/images/Productos/carcasa.jpg",
+    title: "Carcasas",
+    path: "/productos/carcasas",
   },
   {
     id: 7,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
+    image: "/images/Productos/filtro-bolsa-inox.png",
+    title: "Filtro bolsa Inox",
+    path: "/productos/filtro-bolsa-inox",
   },
   {
     id: 8,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
+    image: "/images/productosDestacados/purificador-de-agua-sobremesada.png",
+    title: "Purificador sobremesada",
+    path: "/productos/purificador-sobremesada",
   },
   {
     id: 9,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
-  },
-  {
-    id: 10,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
-  },
-  {
-    id: 11,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
-  },
-  {
-    id: 12,
-    imagen: "",
-    titulo: "Titulo Producto 1",
-    subtitulo: "Subtitulo Producto 1",
-    link: "Link Producto 1",
+    image: "/images/productosDestacados/boya-antisarro.png",
+    title: "Boya Antisarro",
+    path: "/productos/boya-antisarro",
   },
 ];
 
@@ -203,23 +173,23 @@ const problematicasDelHogar = [
   {
     id: 1,
     icon: "",
-    title: "Rotura de cañerías",
+    title: "Rotura de cañerías y accesorios",
     text: "Evitá costosas reparaciones y daños en tus instalaciones con soluciones que protegen tu sistema hidráulico:",
-    productosRelacionados: ["Producto 1", "Producto 2", "Producto 3"],
+    productosRelacionados: ["Producto 1", "Producto 2"],
   },
   {
     id: 2,
     icon: "",
-    title: "Manchas Blancas en las Tuberías",
-    text: "Decile adiós a las manchas y la acumulación de sarro que afectan el rendimiento de tus equipos y tuberías.",
-    productosRelacionados: ["Producto 1", "Producto 2", "Producto 3"],
+    title: "Obstrucción de cañerias",
+    text: "Decile adiós a la acumulación de sarro que afecta el rendimiento de tus equipos y tuberías.",
+    productosRelacionados: ["Ablandador de agua", "Sal de Polifosfato"],
   },
   {
     id: 3,
     icon: "",
     title: "Baja de presión",
     text: "Recuperá el flujo constante de agua con sistemas que optimizan la presión y mejoran el rendimiento en todo tu hogar o industria.",
-    productosRelacionados: ["Producto 1", "Producto 2", "Producto 3"],
+    productosRelacionados: ["Producto 1", "Producto 2"],
   },
 ];
 
@@ -252,15 +222,15 @@ const productosHogar = [
   },
   {
     id: 2,
-    imagen: "/images/Productos/carcasa.jpg",
+    imagen: "/images/Productos/carbon-activado-en-bloque.png",
     categoria: "Filtración",
     subcategoria: "Carbón Activado",
     titulo: "Carbón activado en bloque",
-    linkHref: "/productos/carbon-activado",
+    linkHref: "/productos/carbon-activado-en-bloque",
   },
   {
     id: 3,
-    imagen: "/images/Productos/carcasa.jpg",
+    imagen: "/images/Productos/cartuchos-de-polipropileno.png",
     categoria: "Filtración",
     subcategoria: "Cartuchos de polipropileno",
     titulo: "Cartuchos de polipropieno",
@@ -268,31 +238,23 @@ const productosHogar = [
   },
   {
     id: 4,
-    imagen: "/images/Productos/carcasa.jpg",
+    imagen: "/images/Productos/filtro-bolsa-inox.png",
     categoria: "Filtración",
     subcategoria: "Filtro bolsa Inox",
     titulo: "Filtro bolsa Inox",
     linkHref: "/productos/filtro-bolsa-inox",
   },
-  {
-    id: 5,
-    imagen: "/images/Productos/carcasa.jpg",
-    categoria: "Filtración",
-    subcategoria: "Respuestos de filtro bolsa",
-    titulo: "Respuestos de filtro bolsa",
-    linkHref: "/productos/respuestos-de-filtro-bolsa",
-  },
+  // {
+  //   id: 5,
+  //   imagen: "/images/Productos/carcasa.jpg",
+  //   categoria: "Filtración",
+  //   subcategoria: "Carbón activado granular in-line",
+  //   titulo: "Carbón activado granular in-line",
+  //   linkHref: "/productos/carbon-activado-granular-in-line",
+  // },
   {
     id: 6,
-    imagen: "/images/Productos/carcasa.jpg",
-    categoria: "Filtración",
-    subcategoria: "Carbón activado granular in-line",
-    titulo: "Carbón activado granular in-line",
-    linkHref: "/productos/carbon-activado-granular-in-line",
-  },
-  {
-    id: 7,
-    imagen: "/images/Productos/carcasa.jpg",
+    imagen: "/images/Productos/cartuchos-recargables.png",
     categoria: "Filtración",
     subcategoria: "Cartuchos recargables",
     titulo: "Cartuchos recargables",
@@ -300,15 +262,15 @@ const productosHogar = [
   },
   {
     id: 8,
-    imagen: "/images/Productos/carcasa.jpg",
+    imagen: "/images/Productos/repuestos-para-carcasas.png",
     categoria: "Filtración",
     subcategoria: "Repuesto carcasas",
     titulo: "Repuestos de carcasas",
-    linkHref: "respuesto-de-carcasas",
+    linkHref: "/productos/respuestos-para-carcasas",
   },
   {
     id: 9,
-    imagen: "/images/Productos/carcasa.jpg",
+    imagen: "/images/Productos/ablandador-automatico-de-agua.png",
     categoria: "Ablandadores de agua",
     subcategoria: "Ablandadores automáticos de agua",
     titulo: "Ablandadores automáticos de agua",
@@ -316,95 +278,346 @@ const productosHogar = [
   },
   {
     id: 10,
-    imagen: "/images/Productos/carcasa.jpg",
-    categoria: "Válvulas",
+    imagen: "/images/Productos/valvula-de-control-para-ablandamiento.png",
+    categoria: "Válvulas de control",
     subcategoria: "Válvula de control para ablandamiento",
     titulo: "Válvula de control para ablandamiento",
-    linkHref: "/productos/válvulas-de-control-para-ablandamiento",
+    linkHref: "/productos/valvula-de-control-para-ablandamiento",
   },
   {
     id: 11,
-    imagen: "/images/Productos/carcasa.jpg",
-    categoria: "Válvulas",
-    subcategoria: "Distribuidores y Toberas",
-    titulo: "Distribuidores/Toberas",
-    linkHref: "/productos/distribuidores-y-toberas",
+    imagen: "/images/Productos/valvula-de-control-para-filtracion.png",
+    categoria: "Válvulas de control",
+    subcategoria: "Válvula de control para filtración",
+    titulo: "Válvula de control para filtración",
+    linkHref: "/productos/valvulas-de-control-para-filtracion",
   },
   {
     id: 12,
-    imagen: "/images/Productos/carcasa.jpg",
-    categoria: "Válvulas",
+    imagen: "/images/Productos/tobera.png",
+    categoria: "Válvulas de control",
+    subcategoria: "Distribuidores y Toberas",
+    titulo: "Distribuidores/Toberas",
+    linkHref: "/productos/toberas",
+  },
+  {
+    id: 13,
+    imagen: "/images/Productos/valvula-de-salmuera.png",
+    categoria: "Válvulas de control",
+    subcategoria: "Válvulas de salmuera",
+    titulo: "Válvulas de salmuera",
+    linkHref: "/productos/valvulas-de-salmuera",
+  },
+  {
+    id: 14,
+    imagen: "/images/Productos/repuestos-para-valvula-f116.png",
+    categoria: "Válvulas de control",
     subcategoria: "Repuestos para válvula F116",
     titulo: "Repuestos para válvula F116",
     linkHref: "/productos/repuestos-para-valvula-f116",
   },
   {
-    id: 13,
-    imagen: "/images/Productos/carcasa.jpg",
-    categoria: "Válvulas",
+    id: 15,
+    imagen: "/images/Productos/repuestos-para-valvula-f63.png",
+    categoria: "Válvulas de control",
     subcategoria: "Repuestos para válvula F63",
     titulo: "Repuestos para válvula F63",
-    linkHref: "/productos/válvulas-de-control-para-ablandamiento",
+    linkHref: "/productos/repuestos-para-valvula-f63",
   },
   {
-    id: 14,
-    imagen: "/images/Productos/carcasa.jpg",
-    categoria: "Válvulas",
-    subcategoria: "Válvula de control para ablandamiento",
-    titulo: "Válvula de control para ablandamiento",
-    linkHref: "/productos/válvulas-de-control-para-ablandamiento",
+    id: 16,
+    imagen:
+      "/images/Productos/tanques-de-plastico-reforzado-con-fibra-de-vidrio.png",
+    categoria: "Tanques",
+    subcategoria: "Tanques de plástico reforzado con fibra de vidrio (PRFV)",
+    titulo: "Tanques de plástico reforzado con fibra de vidrio (PRFV)",
+    linkHref: "/productos/tanques-con-plastico-reforzado-con-fibra-de-vidrio",
   },
   {
-    id: 15,
-    imagen: "/images/Productos/carcasa.jpg",
-    categoria: "Válvulas",
-    subcategoria: "Válvula de control para ablandamiento",
-    titulo: "Válvula de control para ablandamiento",
-    linkHref: "/productos/válvulas-de-control-para-ablandamiento",
+    id: 17,
+    imagen: "/images/Productos/repuestos-base-de-tanque.png",
+    categoria: "Tanques",
+    subcategoria: "Repuestos base de tanque",
+    titulo: "Repuestos base de tanque",
+    linkHref: "/productos/repuestos-base-de-tanque",
+  },
+  {
+    id: 18,
+    imagen: "/images/Productos/tanque-de-rotomoldeo.png",
+    categoria: "Tanques",
+    subcategoria: "Tanque de Rotomoldeo",
+    titulo: "Tanques de Rotomoldeo",
+    linkHref: "/productos/tanques-de-rotomoldeo",
+  },
+  {
+    id: 19,
+    imagen: "/images/Productos/tanque-salero.png",
+    categoria: "Tanques",
+    subcategoria: "Tanque Salero",
+    titulo: "Tanque Salero",
+    linkHref: "/productos/tanque-salero",
+  },
+  {
+    id: 20,
+    imagen: "/images/Productos/resinas-de-intercambio-ionico.png",
+    categoria: "Resinas y lechos",
+    subcategoria: "Resinas de intercambio  iónico",
+    titulo: "Resinas de intercambio iónico",
+    linkHref: "/productos/resinas-de-intercambio-ionico",
+  },
+  {
+    id: 21,
+    imagen: "/images/Productos/carbon-activado-zeolita-y-green-sand.png",
+    categoria: "Resinas y lechos",
+    subcategoria: "Carbón activado, Zeolita y Greensand",
+    titulo: "Carbón activado, Zeolita y Green Sand",
+    linkHref: "/productos/carbon-activado-zeolita-y-green-sand",
+  },
+  {
+    id: 22,
+    imagen: "/images/Productos/portamembranas-de-4-de-agua-dulce.png",
+    categoria: "Membranas y portamembranas",
+    subcategoria: 'Portamembranas de 4"- Agua dulce',
+    titulo: 'Portamembranas de 4"- Agua dulce',
+    linkHref: "/productos/portamembranas-de-4-agua-dulce",
+  },
+  {
+    id: 23,
+    imagen: "/images/Productos/portamembranas-de-4-de-agua-de-mar.png",
+    categoria: "Membranas y portamembranas",
+    subcategoria: 'Portamembranas de 4"-Agua de Mar',
+    titulo: 'Portamembranas de 4"-Agua de Mar',
+    linkHref: "/productos/portamembranas-de-4-de-agua-de-mar",
+  },
+  {
+    id: 24,
+    imagen: "/images/Productos/portamembranas-de-8-de-agua-dulce.png",
+    categoria: "Membranas y portamembranas",
+    subcategoria: 'Portamembranas de 8"- Agua dulce',
+    titulo: 'Portamembranas de 8"- Agua dulce',
+    linkHref: "/productos/portamembranas-de-8-agua-dulce",
+  },
+  {
+    id: 25,
+    imagen: "/images/Productos/repuestos-tapas-de-portamembranas.png",
+    categoria: "Membranas y portamembranas",
+    subcategoria: "Repuestos tapas de poratmembranas",
+    titulo: "Repuestos tapas de poratmembranas",
+    linkHref: "/productos/repuestos-tapas-de-portamembranas",
+  },
+  {
+    id: 26,
+    imagen: "/images/Productos/membranas-de-ultrafiltracion.png",
+    categoria: "Membranas y portamembranas",
+    subcategoria: "Membranas de ultrafiltración",
+    titulo: "Membranas de ultrafiltración",
+    linkHref: "/productos/membranas-de-ultrafiltracion",
+  },
+  {
+    id: 27,
+    imagen: "/images/Productos/membrana-ro-lg.png",
+    categoria: "Membranas y portamembranas",
+    subcategoria: "Membranas Ro LG",
+    titulo: "Membranas Ro LG",
+    linkHref: "/productos/membranas-ro-lg",
+  },
+  {
+    id: 28,
+    imagen: "/images/Productos/caudalimetro-en-linea.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Caudalímetros en línea",
+    titulo: "Caudalímetros en línea",
+    linkHref: "/productos/caudalimetros-en-linea",
+  },
+  {
+    id: 29,
+    imagen: "/images/Productos/caudalimetro-para-panel.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Caudalímetros para panel",
+    titulo: "Caudalímetros para panel",
+    linkHref: "/productos/caudalimetros-para-panel",
+  },
+  {
+    id: 30,
+    imagen: "/images/Productos/manometro-posterior.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Manómetro posterior",
+    titulo: "Manómetro posterior",
+    linkHref: "/productos/repuestos-para-valvula-f116",
+  },
+  {
+    id: 31,
+    imagen: "/images/Productos/manometro-inferior.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Manómetro inferior",
+    titulo: "Manómetro inferior",
+    linkHref: "/productos/repuestos-para-valvula-f116",
+  },
+  {
+    id: 32,
+    imagen: "/images/Productos/electrovalvula-de-acero-inoxidable.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Electroválvula de acero inoxidable",
+    titulo: "Electroválvulas de acero inoxidable",
+    linkHref: "/productos/repuestos-para-valvula-f116",
+  },
+  {
+    id: 33,
+    imagen: "/images/Productos/flow-switch.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Flow switch",
+    titulo: "Flow switch",
+    linkHref: "/productos/repuestos-para-valvula-f116",
+  },
+  {
+    id: 34,
+    imagen: "/images/Productos/presostatos-y-switch-press.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Presostatos y switch press",
+    titulo: "Presostatos y switch press",
+    linkHref: "/productos/repuestos-para-valvula-f116",
+  },
+  {
+    id: 35,
+    imagen: "/images/Productos/valvula-reductora-de-presion.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Válvulas reductoras de presión(Inoxidable)",
+    titulo: "Válvulas reductoras de presión(Inoxidable)",
+    linkHref: "/productos/repuestos-para-valvula-f116",
+  },
+  {
+    id: 36,
+    imagen: "/images/Productos/conducimetro.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Conductímetros",
+    titulo: "Conductímetros",
+    linkHref: "/productos/repuestos-para-valvula-f116",
+  },
+  {
+    id: 37,
+    imagen: "/images/Productos/ph-metro-portatil.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "pH-metro portátil",
+    titulo: "pH-metro portátil",
+    linkHref: "/productos/repuestos-para-valvula-f116",
+  },
+  {
+    id: 38,
+    imagen: "/images/Productos/controlador-para-osmosis-inversa.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Controladores para ósmosis inversa",
+    titulo: "Controladores para ósmosis inversa",
+    linkHref: "/productos/repuestos-para-valvula-f116",
+  },
+  {
+    id: 39,
+    imagen: "/images/Productos/controlador-para-ultrafiltracion.png",
+    categoria: "Instrumentación y control",
+    subcategoria: "Controladores para ultra filtración",
+    titulo: "Controladores para ultra filtración",
+    linkHref: "/productos/repuestos-para-valvula-f116",
+  },
+  {
+    id: 40,
+    imagen: "/images/Productos/bomba-dosificadora-automatica.png",
+    categoria: "Dosificación",
+    subcategoria: "Bombas Dosificadoras automáticas",
+    titulo: "Bombas Dosificadoras automáticas",
+    linkHref: "/productos/bombas-dosificadoras-automaticas",
+  },
+  {
+    id: 41,
+    imagen: "/images/Productos/repuestos-bomba-dosificadora.png",
+    categoria: "Dosificación",
+    subcategoria: "Repuestos bomba dosificadora",
+    titulo: "Repuestos bomba dosificadora",
+    linkHref: "/productos/repuestos-bombas-dosificadoras",
+  },
+  {
+    id: 42,
+    imagen: "/images/Productos/antiincrustante-eversafe-11.png",
+    categoria: "Soluciones Químicas",
+    subcategoria: "Antiincrustante Eversafe 11",
+    titulo: "Antiincrustante Eversafe 11",
+    linkHref: "/productos/antiincrustante-eversafe-11",
+  },
+  {
+    id: 43,
+    imagen: "/images/Productos/esterilizadores-uv.png",
+    categoria: "Desinfección",
+    subcategoria: "Esterilizadores UV",
+    titulo: "Esterilizadores UV",
+    linkHref: "/productos/esterilizadores-uv",
+  },
+  {
+    id: 44,
+    imagen: "/images/Productos/repuestos-de-esterilizadores-uv.png",
+    categoria: "Desinfección",
+    subcategoria: "Repuestos de esterilizadores UV",
+    titulo: "Repuestos de esterilizadores UV",
+    linkHref: "/productos/repuestos-de-esterilizadores-uv",
+  },
+  {
+    id: 45,
+    imagen: "/images/Productos/generador-de-ozono.png",
+    categoria: "Desinfección",
+    subcategoria: "Generadores de Ozono O3",
+    titulo: "Generadores de Ozono O3",
+    linkHref: "/productos/generadores-de-ozono",
+  },
+  {
+    id: 46,
+    imagen: "/images/Productos/manguera.png",
+    categoria: "Conectores y mangueras",
+    subcategoria: "Mangueras",
+    titulo: "Mangueras",
+    linkHref: "/productos/mangueras",
+  },
+  {
+    id: 47,
+    imagen: "/images/Productos/conectores-rapidos.png",
+    categoria: "Conectores y mangueras",
+    subcategoria: "Conectores rápidos",
+    titulo: "Conectores rápidos",
+    linkHref: "/productos/conectores-rapidos",
   },
 ];
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <PrimerComponente />
       <SolucionesGrales solutions={solucionesGrales} />
-      {/* <div className="w-full px-10 py-10 h-[450px]">
-        <ProductsSlider data={productosDestacados} />
-      </div> */}
-      <div className="w-full flex flex-col justify-center items-center pt-10 pb-0">
-        <h2 className="w-full text-center text-3xl text-[#60AFFF]">
+      <div
+        id="productos-destacados"
+        className="w-full flex flex-col justify-center items-center pt-10 pb-0"
+      >
+        <h2
+          className={`${montserrat.className} font-bold w-full text-center text-3xl text-[#60AFFF]`}
+        >
           Productos Destacados
         </h2>
-        <Slider />
+        <Slider cards={productosDestacados} />
+        <div className="w-full flex justify-center items-center">
+          <button className={`btn-principal ${montserrat.className}`}>
+            <Link className="w-full h-full" href="/#productos">
+              Todos nuestros productos
+            </Link>
+          </button>
+        </div>
       </div>
 
       <TratamientosHogar
         titulo="Soluciones eficientes para el tratamiento de agua en el hogar"
         subtitulo="Agua pura para tu hogar, bienestar para tu familia"
         texto="Nos enfocamos en ofrecerte productos que mejoran la calidad del agua que consumís a diario. Nuestro tratamiento de agua no solo elimina impurezas, sino que también cuida de tu salud, optimiza el rendimiento de tus electrodomésticos y reduce tus costos. Porque el agua pura no es solo una necesidad, es un bienestar para vos y los tuyos."
-        btnText="Ver línea hogar"
+        btnText="Nuestras soluciones"
       />
       <ProblemasEnHogar items={problematicasDelHogar} />
-      <ProductosDeHogar
-        title="Productos para el "
-        spanTitle="hogar"
-        subTitle="Encontrá la solución que "
-        spanSubtitle="estas buscando"
-        data={productosHogar}
-      />
       <TratamientosIndustria
         titulo="Protege tus equipos y optimiza tu producción"
         subtitulo="Soluciones industriales para agua de calidad"
         texto="Ofrecemos soluciones para evitar la acumulación de sarro, mejorar la eficiencia de tus sistemas de agua y reducir los costos de mantenimiento. Protegé tus equipos industriales de la corrosión y obstrucciones, asegurando un flujo constante y optimizando tu producción."
-        btnText="Ver línea hogar"
-      />
-      <ProductosDeHogar
-        title="Productos para la "
-        spanTitle="industria"
-        subTitle="Optimiza tus "
-        spanSubtitle="procesos industriales"
-        data={productosHogar}
+        btnText="Nuestras soluciones"
       />
       <IndustriasDondeTrabajamos
         sectionTitle=" Industrias dónde "
@@ -412,11 +625,18 @@ export default function Home() {
         data={industrias}
         closureText="La implementación de polifosfato de sodio en tus procesos industriales representa una inversión en eficiencia, ahorro y durabilidad. Contáctanos para conocer cómo podemos ayudarte a optimizar tus operaciones."
       />
+      <ProductosDeHogar
+        title="Productos para el "
+        spanTitle="hogar y la industria"
+        subTitle="Encontrá la solución que "
+        spanSubtitle="estas buscando,"
+        data={productosHogar}
+      />
+      <HistoriaComponent items={diferencialesDeLaEmpresa} />
       <SobreNosotros
         titulo="Elegís Confianza."
         texto="Con más de 30 años en el mercado estamos listos para ayudarte a mejorar la calidad del agua en tu hogar o industria, ofreciéndote confianza, tecnología y un servicio profesional que te respalda en todo momento. Nos dedicamos exclusivamente al tratamiento de agua, lo que nos ha permitido convertirnos en especialistas del sector, brindando atención cercana y adaptada a las necesidades de cada cliente."
       />
-      <HistoriaComponent items={diferencialesDeLaEmpresa} />
       <PreguntasFrecuentesComponent faqs={preguntasFrecuentesData} />
       <DondeEncontrarnos />
       <Link
@@ -429,7 +649,6 @@ export default function Home() {
           alt=""
         />
       </Link>
-      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 "use client";
+import montserrat from "@/app/fonts/fonts";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -34,11 +35,11 @@ const ProductosDeHogar = ({
         const [entry] = entries;
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); 
+          observer.disconnect();
         }
       },
       {
-        threshold: 0.1, 
+        threshold: 0.1,
       }
     );
 
@@ -57,19 +58,26 @@ const ProductosDeHogar = ({
     <section
       ref={sectionRef}
       className="md:px-20 px-5 2xl:px-40 w-full flex justify-center items-center"
+      id="productos"
     >
       <div className="w-full py-10 md:py-20 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center w-full mb-10">
-          <h3 className="w-full text-center text-3xl font-bold mb-5">
+          <h3
+            className={`w-full text-center text-3xl font-bold mb-5 ${montserrat.className}`}
+          >
             {subTitle} <span className="text-[#60AFFF]">{spanSubtitle}</span>
           </h3>
-          <h3 className="w-full text-center text-3xl font-bold">
+          <h3
+            className={`w-full text-center text-3xl font-bold ${montserrat.className}`}
+          >
             {title} <span className="text-[#60AFFF]">{spanTitle}.</span>
           </h3>
         </div>
         <div className="w-full flex flex-col justify-center items-center 2xl:w-[80%]">
           <nav className="w-full flex flex-col flex-row lg:flex-col gap-[10px] sm:gap-[20px] lg:gap-[0px] justify-center items-start lg:items-center mb-10">
-            <ul className="flex flex-col lg:flex-row gap-[5px] justify-between items-center w-fit mb-5">
+            <ul
+              className={`${montserrat.className} flex flex-col lg:flex-row gap-[5px] justify-between items-center w-fit mb-5 text-[14px]`}
+            >
               <li
                 className={
                   activeCategory === "Filtración"
@@ -149,7 +157,9 @@ const ProductosDeHogar = ({
                 Membranas y portamembranas
               </li>
             </ul>
-            <ul className="flex gap-[5px] justify-between items-center w-fit flex-col lg:flex-row">
+            <ul
+              className={`text-[14px] flex gap-[5px] justify-between items-center w-fit flex-col lg:flex-row ${montserrat.className}`}
+            >
               <li
                 className={
                   activeCategory === "Instrumentación y control"
@@ -215,19 +225,6 @@ const ProductosDeHogar = ({
               >
                 Conectores y mangueras
               </li>
-              <li
-                className={
-                  activeCategory === "Electrodesionización"
-                    ? "productNavbar-link-active"
-                    : "productNavbar-link"
-                }
-                onClick={() => {
-                  setActiveCategory("Electrodesionización");
-                  filtrarProductos("Electrodesionización");
-                }}
-              >
-                Electrodesionización
-              </li>
             </ul>
           </nav>
           <div className="w-full md:justify-center flex sm:gap-[10px] gap-[5px] flex-wrap justify-center md:justify-start 2xl:justify-center items-center xl:w-[85%]">
@@ -237,7 +234,7 @@ const ProductosDeHogar = ({
                 className={`product-card ${
                   isVisible ? "scale-fade-in" : "opacity-0 scale-0"
                 }`}
-                style={{ animationDelay: `${i * 0.2}s` }} 
+                style={{ animationDelay: `${i * 0.2}s` }}
               >
                 <div className="w-full flex justify-center items-center gap-[10px]">
                   <div className="flex justify-center items-center w-[30%]">
@@ -247,11 +244,18 @@ const ProductosDeHogar = ({
                       alt=""
                     />
                   </div>
-                  <div className="flex flex-col justify-start items-start w-[70%]">
-                    <h3 className="w-full text-left text-[18px] font-bold mb-5">
+                  <div
+                    className={` flex flex-col justify-start items-start w-[70%]`}
+                  >
+                    <h3
+                      className={`${montserrat.className} w-full text-left text-[18px] leading-[18px] font-bold mb-5`}
+                    >
                       {product.titulo}
                     </h3>
-                    <Link className="link-a-producto" href={product.linkHref}>
+                    <Link
+                      className={`${montserrat.className} link-a-producto`}
+                      href={product.linkHref}
+                    >
                       Ver detalles de producto
                     </Link>
                   </div>

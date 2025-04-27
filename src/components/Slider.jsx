@@ -1,36 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import montserrat from "@/app/fonts/fonts";
 
-const Slider = () => {
-  const cards = [
-    {
-      image: "/images/productosDestacados/producto-prueba.jpeg",
-      category: "Microorganismos y bacterias1",
-      path: "",
-    },
-    {
-      image: "/images/productosDestacados/producto-prueba.jpeg",
-      category: "Microorganismos y bacterias2",
-      path: "",
-    },
-    {
-      image: "/images/productosDestacados/producto-prueba.jpeg",
-      category: "Microorganismos y bacterias3",
-      path: "vermas",
-    },
-    {
-      image: "/images/productosDestacados/producto-prueba.jpeg",
-      category: "Microorganismos y bacterias4",
-      path: "ver mas",
-    },
-    {
-      image: "/images/productosDestacados/producto-prueba.jpeg",
-      category: "Microorganismos y bacterias5",
-      path: "ver mas",
-    },
-  ];
-
+const Slider = ({ cards }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const visibleImages = 4;
 
@@ -46,15 +19,13 @@ const Slider = () => {
     );
   };
 
-  
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000); 
+    }, 5000);
 
-   
     return () => clearInterval(interval);
-  }, [currentIndex]); 
+  }, [currentIndex]);
 
   const visibleSlides = cards.slice(currentIndex, currentIndex + visibleImages);
 
@@ -73,17 +44,21 @@ const Slider = () => {
             key={index}
             className="w-4/4 sm:w-2/4 lg:w-1/4 flex-shrink-0 transition-transform duration-300 bg-white border-gray-500 rounded-lg shadow-md overflow-hidden relative"
           >
-            <img src={card.image} className="w-full h-64 object-cover" />
+            <img src={card.image} className="w-full h-60 object-cover" />
             <div className="p-4">
-              <h3 className="text-[14px] text-center w-full text-[#555555] font-semibold mb-5">
-                {card.category}
+              <h3
+                className={`text-[14px] text-center w-full text-[#555555] font-semibold mb-5 ${montserrat.className}`}
+              >
+                {card.title}
               </h3>
               <Link
-                className="absolute left-0 bottom-2 w-full flex justify-center items-center"
+                className="absolute left-0 bottom-3 w-full flex justify-center items-center"
                 href={card.path}
               >
-                <button className="w-full text-center text-[#60AFFF] text-[14px]">
-                  Ver más
+                <button
+                  className={`w-full text-center text-[#60AFFF] text-[14px] cursor-pointer ${montserrat.className}`}
+                >
+                  Ver detalles
                 </button>
               </Link>
             </div>

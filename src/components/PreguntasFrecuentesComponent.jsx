@@ -1,4 +1,5 @@
 "use client";
+import montserrat from "@/app/fonts/fonts";
 import React from "react";
 
 export default function PreguntasFrecuentesComponent({ faqs }) {
@@ -17,11 +18,15 @@ export default function PreguntasFrecuentesComponent({ faqs }) {
     >
       <div className="sm:w-[80%] w-full flex flex-col justify-center items-center">
         <div className="w-full flex justify-center items-center mb-10">
-          <h3 className="w-full text-center md:text-4xl text-3xl">
+          <h3
+            className={`w-full text-center md:text-4xl text-3xl ${montserrat.className} font-bold`}
+          >
             Preguntas Frecuentes
           </h3>
         </div>
-        <div className="flex flex-col w-full 2xl:w-[80%] justify-center items-center">
+        <div
+          className={`flex flex-col w-full 2xl:w-[80%] justify-center items-center ${montserrat.className}`}
+        >
           {faqs.map((pregunta) => (
             <div key={pregunta.id} className="item w-full">
               <div className="title" onClick={() => toggle(pregunta.id)}>

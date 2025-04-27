@@ -1,4 +1,5 @@
 "use client";
+import montserrat from "@/app/fonts/fonts";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function IndustriasDondeTrabajamos({
@@ -16,11 +17,11 @@ export default function IndustriasDondeTrabajamos({
         const [entry] = entries;
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); 
+          observer.disconnect();
         }
       },
       {
-        threshold: 0.1, 
+        threshold: 0.1,
       }
     );
 
@@ -39,7 +40,9 @@ export default function IndustriasDondeTrabajamos({
 
   return (
     <>
-      <h3 className="px-10 sm:px-20 xl:px-40 2xl:px-60 w-full text-left font-bold mb-2 text-2xl sm:text-3xl text-[black]">
+      <h3
+        className={`px-10 sm:px-20 xl:px-40 2xl:px-60 w-full text-left font-bold mb-2 text-2xl sm:text-3xl text-[black] ${montserrat.className}`}
+      >
         {sectionTitle} <span className="text-[#3066BE]">{spanTitle}</span>
       </h3>
       <section
@@ -54,19 +57,25 @@ export default function IndustriasDondeTrabajamos({
                   isVisible ? "fade-in" : "opacity-0"
                 }`}
                 key={item.id}
-                style={{ animationDelay: `${i * 0.2}s` }} 
+                style={{ animationDelay: `${i * 0.2}s` }}
               >
-                <div className="flex justify-center gap-[5px] items-center mb-5">
+                <div
+                  className={`flex justify-center gap-[5px] items-center mb-5`}
+                >
                   <img
                     className="w-[30px] h-[30px] mr-5"
                     src="/icons/Industrias/industrias-like-icon.png"
                     alt=""
                   />
-                  <h4 className="w-full h-full text-left font-bold text-[18px]">
+                  <h4
+                    className={`w-full h-full text-left font-bold text-[18px] ${montserrat.className}`}
+                  >
                     {item.title}
                   </h4>
                 </div>
-                <p className="w-full text-left text-[14px] text-black">
+                <p
+                  className={`w-full text-left text-[14px] text-black ${montserrat.className}`}
+                >
                   {item.text}
                 </p>
               </div>

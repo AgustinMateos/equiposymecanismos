@@ -1,3 +1,4 @@
+import montserrat from "@/app/fonts/fonts";
 import React from "react";
 
 const DondeEncontrarnos = () => {
@@ -7,7 +8,11 @@ const DondeEncontrarnos = () => {
       className="w-full flex flex-col justify-center items-center py-10"
     >
       <div className="w-[90%] flex justify-center items-center mb-5">
-        <h3 className="w-full text-left text-4xl">Dónde Encontrarnos</h3>
+        <h3
+          className={`font-bold w-full text-left text-4xl ${montserrat.className}`}
+        >
+          Dónde Encontrarnos
+        </h3>
       </div>
       <div className="w-full flex justify-center items-center">
         <iframe

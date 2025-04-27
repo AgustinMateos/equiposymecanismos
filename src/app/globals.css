@@ -37,7 +37,13 @@ html{
   background-color: #60AFFF;
   padding: 8px 25px;
   color: white;
+  transition: all .2s;
+  cursor: pointer;
+}
 
+.btn-principal:hover{
+opacity: 80%;
+transition: all .2s;
 }
 
 .btn-secundario{
@@ -45,7 +51,23 @@ html{
   background-color: white;
   padding: 8px 25px;
   color: #60AFFF;
+  cursor: pointer;
+  transition: all .2s;
+}
 
+.btn-secundario:hover{
+  opacity: 80%;
+  transition: all .2s;
+}
+
+.btn-terciario{
+  border-radius: 25px;
+  background-color: white;
+  padding: 8px 25px;
+  color: #60AFFF;
+  cursor: pointer;
+  transition: all .2s;
+  border: solid 1px #60AFFF;
 }
 
 
@@ -143,6 +165,15 @@ footer{
   margin-top: 5px;
 }
 
+.footer-info-container{
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.footer-social-icon{
+  width: 20px;
+  height: 20px;
+}
+
 /*Whats app*/
 
 .whatsapp-icon{
@@ -231,7 +262,35 @@ footer{
 }
 
 
-/*-----------------------------------------MEDIA QUERIES-----------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------DETALLE DE PRODUCTO--------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+
+
+table tbody tr:nth-child(even){
+  background-color: #60AFFF30;
+}
+
+.tabla-productos-especificaciones{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-collapse: separate;
+    box-shadow: 8px 12px 40px 12px rgba(51, 95, 153, 0.4);
+    border-radius:8px ;
+}
+
+.product-title{
+  border-bottom: solid 1px #cbcbcb;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------HOME--------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------MEDIA QUERIES------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
 @media (max-width:1115px) {
   .solucionesGrales-container{
     width: 80%;
