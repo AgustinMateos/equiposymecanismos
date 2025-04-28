@@ -7,6 +7,7 @@ const ablandadoresAutomaticosDeAgua = {
   subcategoria: "",
   titulo: "",
   descripcion: "",
+  audio: "",
   tableHeaders: [
     "Modelo",
     "Tipo de refrigeración",
@@ -26,6 +27,7 @@ const ablandadoresAutomaticosDeAgua = {
         "25 lts.",
         "50 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Válvula%20de%20control%20Runxin%20F63C1,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
@@ -37,6 +39,7 @@ const ablandadoresAutomaticosDeAgua = {
         "25 lts.",
         "50 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Válvula%20de%20control%20Runxin%20F63C3,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 3,
@@ -48,6 +51,7 @@ const ablandadoresAutomaticosDeAgua = {
         "50 lts.",
         "75 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Válvula%20de%20control%20Runxin%20F63C1,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 4,
@@ -59,6 +63,7 @@ const ablandadoresAutomaticosDeAgua = {
         "50 lts.",
         "75 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Válvula%20de%20control%20Runxin%20F63C3,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -66,6 +71,7 @@ const ablandadoresAutomaticosDeAgua = {
 export default function ControladoresParaOsmosisInversaPage() {
   return (
     <ProductPage
+      audio={ablandadoresAutomaticosDeAgua.audio}
       titulo={ablandadoresAutomaticosDeAgua.titulo}
       imagen={ablandadoresAutomaticosDeAgua.imagen}
       tableHeaders={ablandadoresAutomaticosDeAgua.tableHeaders}

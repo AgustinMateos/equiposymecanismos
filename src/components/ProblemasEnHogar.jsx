@@ -42,7 +42,7 @@ export default function ProblemasEnHogar({ items }) {
   return (
     <section
       id="mision"
-      className="relative bg-[#60AFFF] flex flex-col justify-center items-center px-10 md:px-20 2xl:px-60 xl:px-40 md:px-10 py-24 text-white overflow-hidden h-[680px]"
+      className="relative bg-[#60AFFF] flex flex-col justify-center items-center px-10 md:px-20 2xl:px-60 xl:px-40 md:px-10 py-24 text-white overflow-hidden h-[1300px] sm:h-[1000px] md:h-[680px]"
     >
       {/* Top Wave (Inclined Upwards) */}
       <svg
@@ -58,26 +58,26 @@ export default function ProblemasEnHogar({ items }) {
 
       {/* Content */}
       <h3
-        className={`font-bold w-full text-center mb-5 2xl:mb-14 xl:mb-16 lg:mb-14 text-4xl text-black ${montserrat.className}`}
+        className={`font-bold w-full text-center mb-10 md:mb-5 2xl:mb-14 xl:mb-16 lg:mb-14 text-4xl text-black ${montserrat.className}`}
       >
         Problemáticas comunes
       </h3>
 
-      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-[50px] 2xl:gap-[20px] 2xl:w-[80%]">
+      <div className="problematicasComunes-problemas-container w-full px-5 sm:px-20 flex flex-col md:flex-row justify-center items-center gap-[50px] 2xl:gap-[20px] 2xl:w-[80%]">
         {items.map((item) => (
           <div
             key={item.id}
             className={`flex flex-col justify-center items-center 2xl:w-[80%] ${montserrat.className}`}
           >
-            <h4 className="w-full text-left text-[18px] font-bold mb-5">
+            <h4 className="w-full text-left md:text-[18px] text-[22px] font-bold mb-5">
               {item.title}
             </h4>
-            <p className="w-full text-left text-[14px] mb-5 text-black">
+            <p className="w-full text-left md:text-[14px] text-[18px] mb-5 text-black">
               {item.text}
             </p>
             <ul className="w-full flex flex-col justify-start items-start gap-[10px]">
               {item.productosRelacionados.map((producto, i) => (
-                <li className="list-disc" key={i}>
+                <li className="md:list-disc" key={i}>
                   {producto}
                 </li>
               ))}

@@ -41,15 +41,15 @@ export default function IndustriasDondeTrabajamos({
   return (
     <>
       <h3
-        className={`px-10 sm:px-20 xl:px-40 2xl:px-60 w-full text-left font-bold mb-2 text-2xl sm:text-3xl text-[black] ${montserrat.className}`}
+        className={`px-10 sm:px-20 xl:px-40 2xl:px-60 w-full text-left font-bold mb-2 text-3xl sm:text-3xl text-[black] ${montserrat.className}`}
       >
         {sectionTitle} <span className="text-[#3066BE]">{spanTitle}</span>
       </h3>
       <section
         ref={sectionRef}
-        className="w-full flex justify-center items-center py-10 sm:px-20 px-10 2xl:px-60 xl:px-40 bg-[#3066BE]"
+        className="w-full flex justify-center items-center py-10 sm:px-20 px-5 2xl:px-60 xl:px-40 bg-[#3066BE]"
       >
-        <div className="w-full h-full flex flex-col justify-start items-start py-10">
+        <div className="w-full h-full flex flex-col justify-start items-start py-10 ">
           <div className="w-full flex flex-col md:flex-row sm:gap-[15px] gap-[5px] justify-between items-start mb-10">
             {data.map((item, i) => (
               <div
@@ -68,13 +68,13 @@ export default function IndustriasDondeTrabajamos({
                     alt=""
                   />
                   <h4
-                    className={`w-full h-full text-left font-bold text-[18px] ${montserrat.className}`}
+                    className={`w-full h-full text-left font-bold text-[18px] sm:text-[22px] md:text-[18px] ${montserrat.className}`}
                   >
                     {item.title}
                   </h4>
                 </div>
                 <p
-                  className={`w-full text-left text-[14px] text-black ${montserrat.className}`}
+                  className={`w-full text-left text-[16px] sm:text-[18px] md:text-[14px] text-black ${montserrat.className}`}
                 >
                   {item.text}
                 </p>

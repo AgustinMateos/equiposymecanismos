@@ -111,6 +111,32 @@ transition: all .2s;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------NAVBAR----------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+.nav__link{
+  transition: all .4s;
+  position: relative;
+}
+
+.nav__link::after{
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: white;
+  display: block;
+  position: absolute;
+  left:0;
+  bottom:-8px;
+  opacity: 0;
+  transition: all .2s;
+  pointer-events: none;
+}
+
+.nav__link:hover::after{
+  opacity: 1;
+}
+/*------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------Footer----------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
 
@@ -290,6 +316,12 @@ table tbody tr:nth-child(even){
 /*------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------MEDIA QUERIES------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------*/
+@media (min-width:1600px) {
+  /*Sobre Nosotros*/
+  #sobre-nosotros{
+    padding: 50px 300px;
+  }
+}
 
 @media (max-width:1115px) {
   .solucionesGrales-container{
@@ -316,15 +348,27 @@ table tbody tr:nth-child(even){
   .productNavbar-link{
     width: 250px;
   }
+  .solucionesGrales-container {
+    padding: 30px 10px;
+  }
+  .productosDestacados-slider-container{
+    margin-bottom: 50px;
+  }
+  .tratamientosHogar-container{
+    gap: 10px;
+  }
 }
 
 @media (max-width:769px) {
   .product-card{
-    width: 100%;
+    width: 45%;
   }
   .product-card-img{
     height: 130px;
     width: 100px;
+  }
+  footer{
+    height: auto;
   }
 }
 
@@ -344,6 +388,9 @@ table tbody tr:nth-child(even){
     justify-content: center;
     text-align: center;
   }
+  .product-card {
+    width: 100%;
+}
 }
 
 
@@ -359,6 +406,9 @@ table tbody tr:nth-child(even){
     width: 100%;
     margin-bottom: 20px;
   }
+  .home-productosDestacados-generalBtn{
+    width: 100%;
+  }
 }
 
 @media (max-width:376px) {
@@ -368,6 +418,19 @@ table tbody tr:nth-child(even){
   
   .productNavbar-link{
     width: 150px;
+  }
+}
+
+@media (max-width:361px) {
+  .home-primerComponente-title{
+    width: 90%;
+  }
+  .problematicasComunes-problemas-container{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .title-industria-hogar{
+    font-size: 22px;
   }
 }
 

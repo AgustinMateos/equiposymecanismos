@@ -5,6 +5,7 @@ const repuestosParaCarcasas = {
   imagen:
     "/images/DetalleDeProducto/repuestos-para-carcasas-imagen-producto.png",
   categoria: "Filtración",
+  audio: "",
   subcategoria: "Repuestos para carcasas",
   titulo: "Repuestos para carcasas",
   descripcion:
@@ -19,6 +20,7 @@ const repuestosParaCarcasas = {
         "Acero inox. 304",
         "Rosca hembra 2",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Repuesto%20para%20Carcasa%20BFL-1,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
@@ -28,6 +30,7 @@ const repuestosParaCarcasas = {
         "Acero inox. 304",
         "Rosca hembra 2",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Repuesto%20para%20Carcasa%20BFL-2,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -35,6 +38,7 @@ const repuestosParaCarcasas = {
 export default function RepuestosParaCarcasasPage() {
   return (
     <ProductPage
+      audio={repuestosParaCarcasas.audio}
       titulo={repuestosParaCarcasas.titulo}
       imagen={repuestosParaCarcasas.imagen}
       tableHeaders={repuestosParaCarcasas.tableHeaders}

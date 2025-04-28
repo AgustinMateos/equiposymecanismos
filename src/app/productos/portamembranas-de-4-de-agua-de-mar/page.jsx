@@ -5,6 +5,7 @@ const portamembranasDe4DeAguaDeMar = {
   imagen:
     "/images/DetalleDeProducto/portamembranas-de-4-de-agua-de-mar-producto-imagen.png",
   categoria: "Portamembranas",
+  audio: "",
   subcategoria: 'Portamembranas de 4" de agua de mar',
   titulo: 'Portamembranas de 4" de agua de mar',
   descripcion:
@@ -14,6 +15,7 @@ const portamembranasDe4DeAguaDeMar = {
     {
       id: 1,
       propiedades: ['PM4"', "1", "1.000/69", "PRFV"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Portamembrana%20de%204%20de%20agua%20de%20mar%20PM4,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -21,6 +23,7 @@ const portamembranasDe4DeAguaDeMar = {
 export default function PortamembranasDe4DeAguaDeMarPage() {
   return (
     <ProductPage
+      audio={portamembranasDe4DeAguaDeMar.audio}
       titulo={portamembranasDe4DeAguaDeMar.titulo}
       imagen={portamembranasDe4DeAguaDeMar.imagen}
       tableHeaders={portamembranasDe4DeAguaDeMar.tableHeaders}

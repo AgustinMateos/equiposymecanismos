@@ -4,6 +4,7 @@ import React from "react";
 const ablandadoresAutomaticosDeAgua = {
   imagen: "/images/DetalleDeProducto/-imagen-producto.png",
   categoria: "Válvulas de control",
+  audio: "",
   subcategoria: "",
   titulo: "",
   descripcion: "",
@@ -66,6 +67,7 @@ const ablandadoresAutomaticosDeAgua = {
 export default function ManometroInferiorPage() {
   return (
     <ProductPage
+      audio={ablandadoresAutomaticosDeAgua.audio}
       titulo={ablandadoresAutomaticosDeAgua.titulo}
       imagen={ablandadoresAutomaticosDeAgua.imagen}
       tableHeaders={ablandadoresAutomaticosDeAgua.tableHeaders}

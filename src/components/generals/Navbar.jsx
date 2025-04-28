@@ -54,23 +54,29 @@ const Navbar = ({ bgColorMovement, bgColorStatic }) => {
       >
         <div>
           <Link href="/">
-            <h1 className="text-xl font-bold">Equipos y Mecanismos</h1>
+            <h1 className="text-lg sm:text-xl font-bold">
+              Equipos y Mecanismos
+            </h1>
           </Link>
         </div>
 
-        <div className="hidden md:flex flex-row items-center">
-          {menuItems.map((item, index) => (
-            <p
-              key={index}
-              className={`${item.width} text-center hover:text-blue-500 transition-colors cursor-pointer`}
-            >
-              <Link href={item.link}> {item.text}</Link>
-            </p>
-          ))}
+        <div className="hidden lg:flex flex-row items-center">
+          <ul className="hidden md:flex flex-row items-center">
+            {menuItems.map((item, index) => (
+              <li
+                key={index}
+                className={`${item.width} text-center transition-colors cursor-pointer nav__item ${montserrat.className}`}
+              >
+                <Link className="w-full h-full nav__link" href={item.link}>
+                  {item.text}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <button
-          className="md:hidden text-2xl"
+          className="lg:hidden text-2xl"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FaTimes /> : <FaBars />}
@@ -78,17 +84,22 @@ const Navbar = ({ bgColorMovement, bgColorStatic }) => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden absolute top-[70px] left-0 w-full bg-white shadow-md">
+        <ul className="lg:hidden absolute top-[70px] left-0 w-full bg-white shadow-md">
           {menuItems.map((item, index) => (
-            <p
+            <li
               key={index}
-              className="w-full text-center py-3 hover:bg-gray-100 hover:text-blue-500 transition-colors cursor-pointer"
+              className="w-full text-center py-3 hover:bg-gray-100 text-blue-500 transition-colors cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
-              {item.text}
-            </p>
+              <Link
+                className="w-full h-full flex justify-center items-center"
+                href={item.link}
+              >
+                {item.text}
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
     </nav>
   );

@@ -4,6 +4,7 @@ import React from "react";
 const ablandadoresAutomaticosDeAgua = {
   imagen: "/images/DetalleDeProducto/-imagen-producto.png",
   categoria: "Válvulas de control",
+  audio: "",
   subcategoria: "",
   titulo: "",
   descripcion: "",
@@ -26,6 +27,7 @@ const ablandadoresAutomaticosDeAgua = {
         "25 lts.",
         "50 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Válvula%20de%20salmuera%20F454,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
@@ -37,6 +39,7 @@ const ablandadoresAutomaticosDeAgua = {
         "25 lts.",
         "50 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Válvula%20de%20salmuera%20F454,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 3,
@@ -48,6 +51,7 @@ const ablandadoresAutomaticosDeAgua = {
         "50 lts.",
         "75 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Válvula%20de%20salmuera%20F454,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 4,
@@ -59,6 +63,7 @@ const ablandadoresAutomaticosDeAgua = {
         "50 lts.",
         "75 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Válvula%20de%20salmuera%20F454,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -66,6 +71,7 @@ const ablandadoresAutomaticosDeAgua = {
 export default function ValvulasReductorasDePresionPage() {
   return (
     <ProductPage
+      audio={ablandadoresAutomaticosDeAgua.audio}
       titulo={ablandadoresAutomaticosDeAgua.titulo}
       imagen={ablandadoresAutomaticosDeAgua.imagen}
       tableHeaders={ablandadoresAutomaticosDeAgua.tableHeaders}

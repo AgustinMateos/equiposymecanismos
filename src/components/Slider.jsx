@@ -30,7 +30,7 @@ const Slider = ({ cards }) => {
   const visibleSlides = cards.slice(currentIndex, currentIndex + visibleImages);
 
   return (
-    <div className="flex items-center max-w-[300px] sm:max-w-6xl mx-auto py-5 mt-[60px] md:mt-[0px] mb-[210px] md:mb-[0px] h-auto md:h-[500px]">
+    <div className="flex items-center max-w-[380px] sm:max-w-6xl mx-auto py-5 mt-[60px] md:mt-[0px] mb-[210px] md:mb-[0px] h-auto md:h-[500px] productosDestacados-slider-container">
       <button
         className="bg-[#60AFFF] text-white p-3 rounded-full hover:bg-gray-900 transition-colors"
         onClick={handlePrev}

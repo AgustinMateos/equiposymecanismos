@@ -5,7 +5,7 @@ const DondeEncontrarnos = () => {
   return (
     <section
       id="dondeEncontrarnos"
-      className="w-full flex flex-col justify-center items-center py-10"
+      className="w-full flex flex-col justify-center items-center py-10 max-w-[1500px]"
     >
       <div className="w-[90%] flex justify-center items-center mb-5">
         <h3

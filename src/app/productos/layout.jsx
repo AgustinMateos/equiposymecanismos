@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import Navbar from "@/components/generals/Navbar";
 import Footer from "@/components/generals/Footer";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,6 +24,16 @@ export default function ProductsPageLayout({ children }) {
     <>
       <Navbar bgColorMovement="bg-[#2A5AA7]" bgColorStatic="bg-[#2A5AA7]" />
       {children}
+      <Link
+        href="https://wa.me/5731335678"
+        className="fixed bottom-5 right-5 flex justify-center items-center"
+      >
+        <img
+          className="w-[55px] h-[55px] whatsapp-icon"
+          src="/icons/whatsapp-icon.webp"
+          alt=""
+        />
+      </Link>
     </>
   );
 }

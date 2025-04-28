@@ -5,6 +5,7 @@ const membranasRoLg = {
   imagen: "/images/DetalleDeProducto/membrana-ro-lg-producto-imagen.png",
   categoria: "Válvulas de control",
   subcategoria: "Membranas RO LG",
+  audio: "",
   titulo: "Membranas RO LG",
   descripcion:
     "Las membranas de ósmosis inversa para Brackish Water NanoH2O™ de LG Chem se utilizan en diferentes aplicaciones residenciales, comerciales, industriales y municipales. LG BWRO, que incorpora la innovadora tecnología de membranas nanocompuestas de película fina (TFN), se ofrece en la  configuración estándar del sector y se adapta fácilmente a las plantas nuevas o ya existentes de ósmosis inversa. Clientes de más de 50 países de todo el mundo ya operan con estas membranas LG BWRO.",
@@ -31,6 +32,7 @@ const membranasRoLg = {
         "7,9",
         "Brackish",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Membrana%20RO%20LG%20CW4040SF,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
@@ -44,6 +46,7 @@ const membranasRoLg = {
         "7,9",
         "Brackish",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Membrana%20RO%20LG%20BW4040ES,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 3,
@@ -57,6 +60,7 @@ const membranasRoLg = {
         "9,5",
         "Brackish",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Membrana%20RO%20LG%20BW4040R,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 4,
@@ -70,6 +74,7 @@ const membranasRoLg = {
         "41",
         "Brackish",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Membrana%20RO%20LG%20BW440ES,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 5,
@@ -83,6 +88,7 @@ const membranasRoLg = {
         "41",
         "Brackish",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Membrana%20RO%20LG%20BW440R,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 6,
@@ -96,6 +102,7 @@ const membranasRoLg = {
         "7,4",
         "Agua de mar",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Membrana%20RO%20LG%20SW4040R,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 7,
@@ -109,6 +116,7 @@ const membranasRoLg = {
         "41",
         "Agua de mar",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Membrana%20RO%20LG%20SW4040R,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };

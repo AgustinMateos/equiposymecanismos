@@ -3,7 +3,7 @@ import montserrat from "@/app/fonts/fonts";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
-const ProductosDeHogar = ({
+const ProductosComponent = ({
   title,
   spanTitle,
   subTitle,
@@ -57,23 +57,23 @@ const ProductosDeHogar = ({
   return (
     <section
       ref={sectionRef}
-      className="md:px-20 px-5 2xl:px-40 w-full flex justify-center items-center"
+      className="md:px-10 px-5 2xl:px-40 w-full flex justify-center items-center"
       id="productos"
     >
       <div className="w-full py-10 md:py-20 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center w-full mb-10">
           <h3
-            className={`w-full text-center text-3xl font-bold mb-5 ${montserrat.className}`}
+            className={`w-[90%] sm:w-full text-center text-2xl sm:text-3xl font-bold mb-5 ${montserrat.className}`}
           >
             {subTitle} <span className="text-[#60AFFF]">{spanSubtitle}</span>
           </h3>
           <h3
-            className={`w-full text-center text-3xl font-bold ${montserrat.className}`}
+            className={`w-[85%] sm:w-[90%] sm:w-full text-center text-2xl sm:text-3xl font-bold ${montserrat.className}`}
           >
             {title} <span className="text-[#60AFFF]">{spanTitle}.</span>
           </h3>
         </div>
-        <div className="w-full flex flex-col justify-center items-center 2xl:w-[80%]">
+        <div className="w-full flex flex-col justify-center items-center 2xl:w-[90%]">
           <nav className="w-full flex flex-col flex-row lg:flex-col gap-[10px] sm:gap-[20px] lg:gap-[0px] justify-center items-start lg:items-center mb-10">
             <ul
               className={`${montserrat.className} flex flex-col lg:flex-row gap-[5px] justify-between items-center w-fit mb-5 text-[14px]`}
@@ -227,7 +227,7 @@ const ProductosDeHogar = ({
               </li>
             </ul>
           </nav>
-          <div className="w-full md:justify-center flex sm:gap-[10px] gap-[5px] flex-wrap justify-center md:justify-start 2xl:justify-center items-center xl:w-[85%]">
+          <div className="w-full md:justify-center flex sm:gap-[10px] gap-[15px] flex-wrap justify-center md:justify-center 2xl:justify-center items-center xl:w-[85%]">
             {products.map((product, i) => (
               <div
                 key={product.id}
@@ -269,4 +269,4 @@ const ProductosDeHogar = ({
   );
 };
 
-export default ProductosDeHogar;
+export default ProductosComponent;

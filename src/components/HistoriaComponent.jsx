@@ -35,7 +35,7 @@ export default function HistoriaComponent({ items }) {
     <section
       id="mision"
       ref={sectionRef}
-      className="relative bg-[#60AFFF] flex flex-col justify-center items-center px-10 sm:px-20 2xl:px-60 py-20 2xl:py-30 text-white overflow-hidden h-[680px]"
+      className="relative bg-[#60AFFF] flex flex-col justify-center items-center px-10 sm:px-20 2xl:px-60 py-20 2xl:py-30 text-white overflow-hidden h-[1100px] md:h-[680px]"
     >
       {/* Bottom Wave */}
       <svg

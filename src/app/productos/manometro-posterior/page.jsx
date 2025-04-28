@@ -5,6 +5,7 @@ const ablandadoresAutomaticosDeAgua = {
   imagen: "/images/DetalleDeProducto/-imagen-producto.png",
   categoria: "Válvulas de control",
   subcategoria: "",
+  audio: "",
   titulo: "",
   descripcion: "",
   tableHeaders: [
@@ -66,6 +67,7 @@ const ablandadoresAutomaticosDeAgua = {
 export default function ManometroPosteriorPage() {
   return (
     <ProductPage
+      audio={ablandadoresAutomaticosDeAgua.audio}
       titulo={ablandadoresAutomaticosDeAgua.titulo}
       imagen={ablandadoresAutomaticosDeAgua.imagen}
       tableHeaders={ablandadoresAutomaticosDeAgua.tableHeaders}

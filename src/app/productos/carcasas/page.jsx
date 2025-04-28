@@ -6,6 +6,7 @@ const carcasas = {
   categoria: "Filtración",
   subcategoria: "Carcasas",
   titulo: "Carcasas",
+  audio: "audio",
   descripcion:
     "Las carcasas son componentes esenciales en los sistemas de filtración de agua, diseñadas para contener diversos cartuchos filtrantes como polipropileno, carbón activado o resinas. Están fabricadas con materiales de alta calidad, como polipropileno reforzado (HFPP), y proporcionan una protección segura y eficiente para los medios filtrantes.",
   tableHeaders: ["Modelo", "Caudal máximo", "Conexión", "Medida"],
@@ -13,18 +14,22 @@ const carcasas = {
     {
       id: 1,
       propiedades: ["Mini Blue", "750 Lts/h", '3/4"', '10"x2.5"'],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Carcasa%20Mini%20Blue,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
       propiedades: ["Jumbo", "1.500 Lts/h", '1"', '10"x4.5"'],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Carcasa%20Jumbo%20,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 3,
       propiedades: ["XL", "1.500 Lts/h", '1"', '20"x2.5"'],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Carcasa%20XL,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 4,
       propiedades: ["Big Blue", "3.000 Lts/h", '1"', '20"x4.5'],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Carcasa%20Big%20Blue,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -32,6 +37,7 @@ const carcasas = {
 export default function CarcasasPage() {
   return (
     <ProductPage
+      audio={carcasas.audio}
       titulo={carcasas.titulo}
       imagen={carcasas.imagen}
       tableHeaders={carcasas.tableHeaders}
@@ -39,7 +45,7 @@ export default function CarcasasPage() {
       descripcion={carcasas.descripcion}
     >
       <div className="w-full h-full px-10 text-black">
-        <div className="w-full flex flex-col justify-start items-start gap-[20px] py-5 px-10">
+        <div className="w-full flex flex-col justify-start items-start gap-[20px] py-5 px-0">
           <div>
             <h3 className="w-full text-left font-bold text-2xl mb-2">Usos</h3>
             <p className="w-full text-left">

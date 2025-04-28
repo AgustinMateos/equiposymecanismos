@@ -6,16 +6,19 @@ const cartuchosRecargables = {
   categoria: "Filtración",
   subcategoria: "Cartuchos Recargables",
   titulo: "Cartuchos recargables",
+  audio: "",
   descripcion: "",
   tableHeaders: ["Modelo", "Medida"],
   tableData: [
     {
       id: 1,
       propiedades: ["CV1025", "10x2,5"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Cartuchos%20de%20Recargables%20CV1025,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
       propiedades: ["CV2025", "20x2,5"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Cartuchos%20de%20Recargables%20CV2025,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -23,6 +26,7 @@ const cartuchosRecargables = {
 export default function CartuchosRecargablesPage() {
   return (
     <ProductPage
+      audio={cartuchosRecargables.audio}
       titulo={cartuchosRecargables.titulo}
       imagen={cartuchosRecargables.imagen}
       tableHeaders={cartuchosRecargables.tableHeaders}

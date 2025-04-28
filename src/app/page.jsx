@@ -9,7 +9,7 @@ import PreguntasFrecuentesComponent from "@/components/PreguntasFrecuentesCompon
 import DondeEncontrarnos from "@/components/DondeEncontrarnos";
 
 import HistoriaComponent from "@/components/HistoriaComponent";
-import ProductosDeHogar from "@/components/ProductosDeHogar";
+import ProductosComponent from "@/components/ProductosComponent";
 import ProblemasEnHogar from "@/components/ProblemasEnHogar";
 import Link from "next/link";
 import IndustriasDondeTrabajamos from "@/components/IndustriasDondeTrabajamos";
@@ -589,16 +589,18 @@ export default function Home() {
       <SolucionesGrales solutions={solucionesGrales} />
       <div
         id="productos-destacados"
-        className="w-full flex flex-col justify-center items-center pt-10 pb-0"
+        className="w-full flex flex-col justify-center items-center pt-10 pb-0 mb-20"
       >
         <h2
-          className={`${montserrat.className} font-bold w-full text-center text-3xl text-[#60AFFF]`}
+          className={`${montserrat.className} home-primerComponente-title font-bold w-full text-center text-3xl text-[#60AFFF]`}
         >
           Productos Destacados
         </h2>
         <Slider cards={productosDestacados} />
-        <div className="w-full flex justify-center items-center">
-          <button className={`btn-principal ${montserrat.className}`}>
+        <div className="w-full flex justify-center items-center px-10">
+          <button
+            className={`btn-principal ${montserrat.className} w-[75%] h-[50px] sm:w-[50%] home-productosDestacados-generalBtn`}
+          >
             <Link className="w-full h-full" href="/#productos">
               Todos nuestros productos
             </Link>
@@ -625,7 +627,7 @@ export default function Home() {
         data={industrias}
         closureText="La implementación de polifosfato de sodio en tus procesos industriales representa una inversión en eficiencia, ahorro y durabilidad. Contáctanos para conocer cómo podemos ayudarte a optimizar tus operaciones."
       />
-      <ProductosDeHogar
+      <ProductosComponent
         title="Productos para el "
         spanTitle="hogar y la industria"
         subTitle="Encontrá la solución que "
@@ -638,7 +640,10 @@ export default function Home() {
         texto="Con más de 30 años en el mercado estamos listos para ayudarte a mejorar la calidad del agua en tu hogar o industria, ofreciéndote confianza, tecnología y un servicio profesional que te respalda en todo momento. Nos dedicamos exclusivamente al tratamiento de agua, lo que nos ha permitido convertirnos en especialistas del sector, brindando atención cercana y adaptada a las necesidades de cada cliente."
       />
       <PreguntasFrecuentesComponent faqs={preguntasFrecuentesData} />
-      <DondeEncontrarnos />
+      <div className="flex justify-center items-center w-full">
+        <DondeEncontrarnos />
+      </div>
+
       <Link
         href="https://wa.me/5731335678"
         className="fixed bottom-5 right-5 flex justify-center items-center"

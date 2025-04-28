@@ -17,20 +17,32 @@ const socialIconsVariant = {
 
 const Footer = ({}) => {
   return (
-    <footer className={`w-full flex flex-col p-3 ${montserrat.className}`}>
+    <footer
+      className={`w-full flex justify-center items-center flex-col p-3 ${montserrat.className}`}
+    >
       <div className="text-white flex flex-col justify-start items-center bg-[#2A5AA7] w-full h-full rounded-[10px] p-5">
-        <div className="footer-info-container pb-10 w-full flex justify-center items-start gap-[25px]">
-          <div className="flex gap-[30px] w-[90%] justify-between items-start">
+        <div className="footer-info-container pb-10 w-full flex justify-center items-start gap-[25px] max-w-[1500px]">
+          <div className="flex flex-col md:flex-row gap-[30px] w-[90%] justify-between items-start">
             <div>
               <ul>
                 <li className="font-bold mb-[10px]">
                   <strong>Soluciones</strong>
                 </li>
-                <li className="mb-[5px]">
-                  <Link href="/#tratamientos-para-el-hogar">Hogar</Link>
+                <li className="mb-[10px]">
+                  <Link
+                    className="nav__link"
+                    href="/#tratamientos-para-el-hogar"
+                  >
+                    Hogar
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/#tratamientos-para-la-industria">Industria</Link>
+                  <Link
+                    className="nav__link"
+                    href="/#tratamientos-para-la-industria"
+                  >
+                    Industria
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -39,11 +51,13 @@ const Footer = ({}) => {
                 <li className="font-bold mb-[10px]">
                   <strong>Productos</strong>
                 </li>
-                <li className="mb-[5px]">
-                  <Link href="/#productos">Todos los productos</Link>
+                <li className="mb-[10px]">
+                  <Link className="nav__link" href="/#productos">
+                    Todos los productos
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/#productos-destacados">
+                  <Link className="nav__link" href="/#productos-destacados">
                     Productos destacados
                   </Link>
                 </li>
@@ -54,11 +68,13 @@ const Footer = ({}) => {
                 <li className="font-bold mb-[10px]">
                   <strong>Empresa</strong>
                 </li>
-                <li className="mb-[5px]">
-                  <Link href="/#sobre-nosotros">Sobre nosotros</Link>
+                <li className="mb-[10px]">
+                  <Link className="nav__link" href="/#sobre-nosotros">
+                    Sobre nosotros
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/#preguntas-frecuentes">
+                  <Link className="nav__link" href="/#preguntas-frecuentes">
                     Preguntas frecuentes
                   </Link>
                 </li>
@@ -70,7 +86,9 @@ const Footer = ({}) => {
                   <strong>Mail</strong>
                 </li>
                 <li className="mb-[10px]">
-                  <Link href="/"></Link>info@equiposymecanismos.com.ar
+                  <Link className="nav__link" href="/">
+                    info@equiposymecanismos.com.ar
+                  </Link>
                 </li>
                 <li className="font-bold mb-[10px]">
                   <strong>Teléfono</strong>

@@ -10,9 +10,13 @@ export default function SobreNosotros({ titulo, texto }) {
     >
       <div className="w-full flex justify-center items-center gap-[50px] flex-col-reverse md:flex-row">
         <div className="md:w-[55%] w-full flex flex-col justify-center items-center text-[#555555]">
-          <p className={`${montserrat.className} mb-[20px]`}>{texto}</p>
-          <div className="w-full flex gap-[10px] justify-start items-center">
-            <button className="btn-principal">
+          <p
+            className={`${montserrat.className} mb-[30px] md:mb-[20px] text-end md:text-start`}
+          >
+            {texto}
+          </p>
+          <div className="w-full flex flex-col lg:flex-row gap-[20px] md:gap-[10px] justify-center lg:justify-start items-center md:items-start lg:items-center">
+            <button className="btn-principal home-productosDestacados-generalBtn w-[75%] lg:[w-48%]">
               <Link
                 className="flex justify-center items-center w-full h-full"
                 href="/#tratamientos-para-el-hogar"
@@ -20,7 +24,7 @@ export default function SobreNosotros({ titulo, texto }) {
                 Soluciones para el hogar
               </Link>
             </button>
-            <button className="btn-terciario">
+            <button className="btn-terciario home-productosDestacados-generalBtn w-[75%] lg:[w-48%]">
               <Link
                 className="w-full h-full flex justify-center items-center"
                 href="/#tratamientos-para-la-industria"

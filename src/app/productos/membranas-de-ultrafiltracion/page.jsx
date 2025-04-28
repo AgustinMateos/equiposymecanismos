@@ -5,6 +5,7 @@ const membranasDeUltraFiltracion = {
   imagen:
     "/images/DetalleDeProducto/membranas-de-ultrafiltracion-producto-imagen.png",
   categoria: "Portamembranas",
+  audio: "audio",
   subcategoria: "Membranas de ultrfiltración",
   titulo: "Membranas de ultrafiltración",
   descripcion:
@@ -30,6 +31,7 @@ const membranasDeUltraFiltracion = {
         "5~40 °C",
         "3-11",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Membrana%20de%20ultrafiltración%20MUF%204046,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
@@ -42,6 +44,7 @@ const membranasDeUltraFiltracion = {
         "5~40 °C",
         "3-11",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Membrana%20de%20ultrafiltración%20MUF%208040,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -49,6 +52,7 @@ const membranasDeUltraFiltracion = {
 export default function MembranasDeUltrafiltracionPage() {
   return (
     <ProductPage
+      audio={membranasDeUltraFiltracion.audio}
       titulo={membranasDeUltraFiltracion.titulo}
       imagen={membranasDeUltraFiltracion.imagen}
       tableHeaders={membranasDeUltraFiltracion.tableHeaders}

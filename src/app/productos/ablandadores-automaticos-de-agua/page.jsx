@@ -7,6 +7,7 @@ const ablandadoresAutomaticosDeAgua = {
   categoria: "Filtración",
   subcategoria: "Ablandador automático de agua",
   titulo: "Ablandador automático de agua",
+  audio: "audio",
   descripcion:
     "El ablandador automático es un sistema de tratamiento del agua diseñado para eliminar la dureza total (sarro) presente en el agua, mediante un proceso de intercambio iónico. Este equipo se     programa para regenerar la resina de intercambio iónico a través de intervalos por tiempo o por volumen, según el modelo correspondiente. El sistema consta de un tanque PRFV para acopio de resina, un tanque de rotomoldeo para salmuera y una válvula de control automática Runxin (por volumen o por tiempo).",
   tableHeaders: [
@@ -28,6 +29,7 @@ const ablandadoresAutomaticosDeAgua = {
         "25 lts.",
         "50 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Runxin%20F63C1,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
@@ -39,6 +41,7 @@ const ablandadoresAutomaticosDeAgua = {
         "25 lts.",
         "50 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Runxin%20F63C3,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 3,
@@ -50,6 +53,7 @@ const ablandadoresAutomaticosDeAgua = {
         "50 lts.",
         "75 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Runxin%20F63C1,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 4,
@@ -61,6 +65,7 @@ const ablandadoresAutomaticosDeAgua = {
         "50 lts.",
         "75 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Runxin%20F63C3,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -68,6 +73,7 @@ const ablandadoresAutomaticosDeAgua = {
 export default function AblandadoresDeAguaPage() {
   return (
     <ProductPage
+      audio={ablandadoresAutomaticosDeAgua.audio}
       titulo={ablandadoresAutomaticosDeAgua.titulo}
       imagen={ablandadoresAutomaticosDeAgua.imagen}
       tableHeaders={ablandadoresAutomaticosDeAgua.tableHeaders}
@@ -76,13 +82,6 @@ export default function AblandadoresDeAguaPage() {
     >
       <div>
         <div className="w-full h-[300px] flex justify-start items-start gap-[50px] px-40">
-          {/* <div className="w-[50%] flex flex-col justify-start items-start">
-            <h3 className="font-bold text-2xl mb-2">Descripción</h3>
-            <span className="text-[#60AFFF]">
-              ¡Solución definitiva para eliminar el sarro!
-            </span>
-            <p></p>
-          </div> */}
           <div className="flex w-[50%] h-full flex-col justify-start items-start">
             <h3 className="w-full text-left font-bold text-2xl mb-2">Usos</h3>
             <ul>

@@ -4,6 +4,7 @@ import React from "react";
 const tanqueSalero = {
   imagen: "/images/DetalleDeProducto/tanques-saleros-producto-imagen.png",
   categoria: "Válvulas de control",
+  audio: "",
   subcategoria: "Tanques Saleros",
   titulo: "Tanques saleros",
   descripcion:
@@ -19,26 +20,32 @@ const tanqueSalero = {
     {
       id: 1,
       propiedades: ["TS50AC", "50 lts.", "345 mm", "390mm", "490 mm"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Tanque%20salero%20TS50AC,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
       propiedades: ["TS75AC", "75 lts.", "435 mm", "475mm", "575 mm"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Tanque%20salero%20TS75AC,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 3,
       propiedades: ["TS100AC", "100 lts.", "435 mm", "475mm", "710 mm"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Tanque%20salero%20TS100AC,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 4,
       propiedades: ["TS230AC", "230 lts.", "605 mm", "630 mm", "860 mm"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Tanque%20salero%20TS230AC,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 5,
       propiedades: ["TS230VAF", "230 lts.", "605 mm", "630 mm", "860 mm"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Tanque%20salero%20TS230VAF,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 6,
       propiedades: ["TS500VAF", "500 lts.", "875 mm", "985 mm", "975 mm"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Tanque%20salero%20TS500VAF,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -46,6 +53,7 @@ const tanqueSalero = {
 export default function TanqueSaleroPage() {
   return (
     <ProductPage
+      audio={tanqueSalero.audio}
       titulo={tanqueSalero.titulo}
       imagen={tanqueSalero.imagen}
       tableHeaders={tanqueSalero.tableHeaders}

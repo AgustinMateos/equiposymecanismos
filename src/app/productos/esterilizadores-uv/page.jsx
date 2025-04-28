@@ -4,6 +4,7 @@ import React from "react";
 const esterilizadoresUV = {
   imagen: "/images/DetalleDeProducto/esterilizadores-uv-imagen-producto.png",
   categoria: "Válvulas de control",
+  audio: "",
   subcategoria: "Esterilizadores UV",
   titulo: "Esterilizadores UV",
   descripcion:
@@ -13,6 +14,7 @@ const esterilizadoresUV = {
     {
       id: 1,
       propiedades: ["UV-12W", "250 lts/h", "Rosca H 1/4", "8.000 HS continuas"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Esterilizador%20UV%20Modelo%20UV-12W,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
@@ -22,6 +24,7 @@ const esterilizadoresUV = {
         "Rosca M 3/4",
         "8.000 Hs continuas",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Esterilizador%20UV%20Modelo%20UV-40W,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -29,6 +32,7 @@ const esterilizadoresUV = {
 export default function EsterilizadoresUvPage() {
   return (
     <ProductPage
+      audio={esterilizadoresUV.audio}
       titulo={esterilizadoresUV.titulo}
       imagen={esterilizadoresUV.imagen}
       tableHeaders={esterilizadoresUV.tableHeaders}

@@ -91,14 +91,14 @@ export default function PrimerComponente() {
             {currentSlide === 0 ? (
               <>
                 <h2
-                  className={`${montserrat.className} text-2xl sm:text-3xl md:text-[24px] font-bold mb-4 text-left w-full md:px-5 pr-0 pl-5`}
+                  className={`${montserrat.className} text-xl sm:text-2xl sm:text-3xl md:text-[24px] font-bold mb-4 text-left w-full md:px-5 pr-0 pl-5`}
                 >
                   <span className="text-[#60AFFF]">
                     {slides[currentSlide].span}
                   </span>
                   {slides[currentSlide].title}
                 </h2>
-                <p className="text-[14px] md:text-base px-5 mb-6 text-left w-full">
+                <p className="text-[16px] md:text-base px-5 mb-6 text-left w-full">
                   {slides[currentSlide].text}
                 </p>
               </>
@@ -110,7 +110,7 @@ export default function PrimerComponente() {
                     {slides[currentSlide].span}
                   </span>
                 </h2>
-                <p className="text-[14px] md:text-base px-5 mb-6 text-left w-full">
+                <p className="text-[16px] md:text-base px-5 mb-6 text-left w-full">
                   {slides[currentSlide].text}
                 </p>
               </>
@@ -122,7 +122,7 @@ export default function PrimerComponente() {
                   </span>
                   {slides[currentSlide].title}
                 </h2>
-                <p className="text-[14px] md:text-base px-5 mb-6 text-left w-full">
+                <p className="text-[16px] md:text-base px-5 mb-6 text-left w-full">
                   {slides[currentSlide].text}
                 </p>
               </>

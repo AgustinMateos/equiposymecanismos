@@ -7,6 +7,7 @@ const cartuchosDePolipropileno = {
   categoria: "Filtración",
   subcategoria: "Cartuchos de polipropileno",
   titulo: "Cartuchos de polipropileno",
+  audio: "",
   descripcion:
     "Los cartuchos de polipropileno son ampliamente utilizados en sistemas de tratamiento del agua para la eliminación eficaz de partículas y sedimentos. Fabricados a partir de fibras de polipropileno termosoldadas, estos cartuchos ofrecen una solución económica y eficiente para la filtración tangencial del agua.",
   tableHeaders: ["Modelo", "Medida", "Micronaje"],
@@ -14,18 +15,22 @@ const cartuchosDePolipropileno = {
     {
       id: 1,
       propiedades: ["PP1025", '10x2,5"', "1-5-20"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Cartucho%20de%20Polipropileno%20PP1025,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
       propiedades: ["PP1045", '10x4,5"', "1-5-20"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Cartucho%20de%20Polipropileno%20PP1045,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 3,
       propiedades: ["PP2025", '20x2,5"', "1-5-20"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Cartucho%20de%20Polipropileno%20PP2025,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 4,
       propiedades: ["PP2045", '20x4,5"', "1-5-20"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:%20Cartucho%20de%20Polipropileno%20PP2045,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -33,6 +38,7 @@ const cartuchosDePolipropileno = {
 export default function CartuchosDePolipropilenoPage() {
   return (
     <ProductPage
+      audio={cartuchosDePolipropileno.audio}
       titulo={cartuchosDePolipropileno.titulo}
       imagen={cartuchosDePolipropileno.imagen}
       tableHeaders={cartuchosDePolipropileno.tableHeaders}

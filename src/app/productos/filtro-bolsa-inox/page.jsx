@@ -5,6 +5,7 @@ const filtroBolsaInox = {
   imagen: "/images/DetalleDeProducto/filtro-bolsa-inox-imagen-producto.png",
   categoria: "Filtración",
   subcategoria: "Filtro Bolsa Inox",
+  audio: "audio",
   titulo: "Filtro bolsa inox",
   descripcion:
     "Los filtros bolsa están construidos íntegramente en acero inoxidable, con altura regulable y fácil conexión. Los mismos se caracterizan por su alta capacidad de retención de partículas y grandes caudales de filtración.",
@@ -18,6 +19,7 @@ const filtroBolsaInox = {
         "Acero inox. 304",
         "Rosca hembra 2",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Filtro%20UV%20Bolsa%20Inox%20BFL-1,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
@@ -27,6 +29,7 @@ const filtroBolsaInox = {
         "Acero inox. 304",
         "Rosca hembra 2",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Filtro%20UV%20Bolsa%20Inox%20BFL-2,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
