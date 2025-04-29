@@ -44,7 +44,7 @@ export default function SolucionesGrales({ solutions }) {
         </div>
 
         <div
-          className="w-full z-0 h-[50%] bg-[#cbcbcb] absolute bottom-0"
+          className="w-full z-0 h-[50%] bg-[#F0F0F0] absolute bottom-0"
           style={{
             height: "300px",
             clipPath: "ellipse(75% 100% at 50% 100%)",

@@ -5,7 +5,7 @@ const membranasRoLg = {
   imagen: "/images/DetalleDeProducto/membrana-ro-lg-producto-imagen.png",
   categoria: "Válvulas de control",
   subcategoria: "Membranas RO LG",
-  audio: "",
+  audio: "/audios/audio-membranas.mp4",
   titulo: "Membranas RO LG",
   descripcion:
     "Las membranas de ósmosis inversa para Brackish Water NanoH2O™ de LG Chem se utilizan en diferentes aplicaciones residenciales, comerciales, industriales y municipales. LG BWRO, que incorpora la innovadora tecnología de membranas nanocompuestas de película fina (TFN), se ofrece en la  configuración estándar del sector y se adapta fácilmente a las plantas nuevas o ya existentes de ósmosis inversa. Clientes de más de 50 países de todo el mundo ya operan con estas membranas LG BWRO.",

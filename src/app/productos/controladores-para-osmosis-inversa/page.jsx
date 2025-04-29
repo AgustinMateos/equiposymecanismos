@@ -7,7 +7,7 @@ const ablandadoresAutomaticosDeAgua = {
   subcategoria: "",
   titulo: "",
   descripcion: "",
-  audio: "",
+  audio: "/audios/audio-automatizacion (2).mp4",
   tableHeaders: [
     "Modelo",
     "Tipo de refrigeración",

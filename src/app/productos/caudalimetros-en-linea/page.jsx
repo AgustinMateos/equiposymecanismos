@@ -6,7 +6,7 @@ const caudalimetrosEnLinea = {
   categoria: "Instrumentación y control",
   subcategoria: "Caudalímetros en línea",
   titulo: "Caudalímetros en línea",
-  audio: "",
+  audio: "/audios/audio-automatizacion (2).mp4",
   descripcion:
     "Medí con precisión el flujo de agua en sistemas de filtrado, potabilización o distribución. Instalado directamente en la tubería, permite un monitoreo en tiempo real para optimizar el rendimiento de bombas, filtros y otros equipos. Ideal para uso doméstico o industrial, facilita el control, la detección de fallas y el ahorro de recursos.",
   tableHeaders: ["Modelo", "Galones por minuto", "Rosca"],

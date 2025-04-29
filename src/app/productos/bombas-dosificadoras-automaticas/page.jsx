@@ -5,7 +5,7 @@ const bombasDosificadorasAutomaticas = {
   imagen:
     "/images/DetalleDeProducto/bomba-dosificadora-automatica-imagen-producto.png",
   categoria: "Dosificación",
-  audio: "audio",
+  audio: "/audios/audio-bombas-dosificadoras-automaticas.mp4",
   subcategoria: "Bombas dosificadoras automácticas",
   titulo: "Bombas dosificadoras automácticas",
   descripcion:

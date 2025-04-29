@@ -5,7 +5,7 @@ const membranasDeUltraFiltracion = {
   imagen:
     "/images/DetalleDeProducto/membranas-de-ultrafiltracion-producto-imagen.png",
   categoria: "Portamembranas",
-  audio: "audio",
+  audio: "",
   subcategoria: "Membranas de ultrfiltración",
   titulo: "Membranas de ultrafiltración",
   descripcion:

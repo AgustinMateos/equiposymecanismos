@@ -6,7 +6,7 @@ const carcasas = {
   categoria: "Filtración",
   subcategoria: "Carcasas",
   titulo: "Carcasas",
-  audio: "audio",
+  audio: "",
   descripcion:
     "Las carcasas son componentes esenciales en los sistemas de filtración de agua, diseñadas para contener diversos cartuchos filtrantes como polipropileno, carbón activado o resinas. Están fabricadas con materiales de alta calidad, como polipropileno reforzado (HFPP), y proporcionan una protección segura y eficiente para los medios filtrantes.",
   tableHeaders: ["Modelo", "Caudal máximo", "Conexión", "Medida"],

@@ -36,13 +36,13 @@ export default function TratamientosIndustria({
               {titulo}
             </h2>
             <p
-              className={`w-full text-left text-[18px]  md:mb-2 text-[#555555] mb-6 ${montserrat.className}`}
+              className={`w-full text-left text-[18px]  text-[#555555] mb-8 ${montserrat.className}`}
             >
               {texto}
             </p>
             <div className="w-full flex justify-start items-center">
               <button
-                className={`btn-principal home-productosDestacados-generalBtn w-[75%] h-[50px] sm:w-[50%] md:w-[75%] ${montserrat.className}`}
+                className={`btn-principal home-productosDestacados-generalBtn w-[75%] h-[50px] lg:h-[40px] sm:w-[50%] md:w-[75%] lg:w-[45%] ${montserrat.className}`}
               >
                 <Link className="w-full h-full" href="/#productos">
                   {btnText}

@@ -7,7 +7,7 @@ const ablandadoresAutomaticosDeAgua = {
   categoria: "Filtración",
   subcategoria: "Ablandador automático de agua",
   titulo: "Ablandador automático de agua",
-  audio: "audio",
+  audio: "",
   descripcion:
     "El ablandador automático es un sistema de tratamiento del agua diseñado para eliminar la dureza total (sarro) presente en el agua, mediante un proceso de intercambio iónico. Este equipo se     programa para regenerar la resina de intercambio iónico a través de intervalos por tiempo o por volumen, según el modelo correspondiente. El sistema consta de un tanque PRFV para acopio de resina, un tanque de rotomoldeo para salmuera y una válvula de control automática Runxin (por volumen o por tiempo).",
   tableHeaders: [

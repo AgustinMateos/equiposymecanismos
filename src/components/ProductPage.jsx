@@ -139,7 +139,7 @@ export default function ProductPage({
                 {audio == "" ? null : (
                   <div className="w-full flex justify-start items-center">
                     <AudioPlayerComponent
-                      audioSrc="/audios/prueba.ogg"
+                      audioSrc={audio}
                       title="Descripción detallada"
                       description="Conozca los detalles del producto y sus características."
                     />
@@ -182,7 +182,7 @@ export default function ProductPage({
                         className="text-[#60AFFF] underline"
                         href={data.link}
                       >
-                        Solicitar
+                        Comprar
                       </Link>
                     </td>
                   </tr>
@@ -196,7 +196,7 @@ export default function ProductPage({
         <>
           <div
             ref={sectionRef}
-            className="relative bg-[#F0F0F0] flex flex-col justify-center items-center px-0 sm:px-20 2xl:px-60 py-20 md:py-40 2xl:py-60 text-black overflow-hidden h-auto"
+            className="relative w-full bg-[#F0F0F0] flex flex-col justify-center items-center px-0 sm:px-20 2xl:px-60 py-20 md:py-40 2xl:py-60 text-black overflow-hidden h-auto"
           >
             {/* Bottom Wave */}
             <svg

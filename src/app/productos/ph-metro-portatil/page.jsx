@@ -4,7 +4,7 @@ import React from "react";
 const ablandadoresAutomaticosDeAgua = {
   imagen: "/images/DetalleDeProducto/-imagen-producto.png",
   categoria: "Válvulas de control",
-  audio: "",
+  audio: "/audios/audio-automatizacion (2).mp4",
   subcategoria: "",
   titulo: "",
   descripcion: "",
@@ -27,6 +27,7 @@ const ablandadoresAutomaticosDeAgua = {
         "25 lts.",
         "50 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
@@ -38,6 +39,7 @@ const ablandadoresAutomaticosDeAgua = {
         "25 lts.",
         "50 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 3,
@@ -49,6 +51,7 @@ const ablandadoresAutomaticosDeAgua = {
         "50 lts.",
         "75 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 4,
@@ -60,6 +63,7 @@ const ablandadoresAutomaticosDeAgua = {
         "50 lts.",
         "75 lts",
       ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };

@@ -5,7 +5,7 @@ const tanquesDePlasticoReforzado = {
   imagen:
     "/images/DetalleDeProducto/tanques-de-plastico-reforzado-con-fibra-de-vidrio-producto-imagen.jpeg",
   categoria: "Tanques",
-  audio: "audio",
+  audio: "/audios/audio-tanque-prfv-2.mp4",
   subcategoria: "Tanques con plástico reforzado con fibra de vidrio",
   titulo: "Tanques con plástico reforzado con fibra de vidrio",
   descripcion:

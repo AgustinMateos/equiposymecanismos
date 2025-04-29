@@ -15,6 +15,7 @@ import Link from "next/link";
 import IndustriasDondeTrabajamos from "@/components/IndustriasDondeTrabajamos";
 import Slider from "@/components/Slider";
 import montserrat from "./fonts/fonts";
+import PolifosfatoComponent from "@/components/PolifosfatoComponent";
 
 //Imagenes
 
@@ -443,7 +444,7 @@ const productosHogar = [
     categoria: "Instrumentación y control",
     subcategoria: "Manómetro posterior",
     titulo: "Manómetro posterior",
-    linkHref: "/productos/repuestos-para-valvula-f116",
+    linkHref: "/productos/manometro-posterior",
   },
   {
     id: 31,
@@ -451,7 +452,7 @@ const productosHogar = [
     categoria: "Instrumentación y control",
     subcategoria: "Manómetro inferior",
     titulo: "Manómetro inferior",
-    linkHref: "/productos/repuestos-para-valvula-f116",
+    linkHref: "/productos/manometro-inferior",
   },
   {
     id: 32,
@@ -459,7 +460,7 @@ const productosHogar = [
     categoria: "Instrumentación y control",
     subcategoria: "Electroválvula de acero inoxidable",
     titulo: "Electroválvulas de acero inoxidable",
-    linkHref: "/productos/repuestos-para-valvula-f116",
+    linkHref: "/productos/electrovalvulas-de-acero-inoxidable",
   },
   {
     id: 33,
@@ -467,7 +468,7 @@ const productosHogar = [
     categoria: "Instrumentación y control",
     subcategoria: "Flow switch",
     titulo: "Flow switch",
-    linkHref: "/productos/repuestos-para-valvula-f116",
+    linkHref: "/productos/flow-switch",
   },
   {
     id: 34,
@@ -475,7 +476,7 @@ const productosHogar = [
     categoria: "Instrumentación y control",
     subcategoria: "Presostatos y switch press",
     titulo: "Presostatos y switch press",
-    linkHref: "/productos/repuestos-para-valvula-f116",
+    linkHref: "/productos/presostatus-y-switch-press",
   },
   {
     id: 35,
@@ -599,9 +600,12 @@ export default function Home() {
         <Slider cards={productosDestacados} />
         <div className="w-full flex justify-center items-center px-10">
           <button
-            className={`btn-principal ${montserrat.className} w-[75%] h-[50px] sm:w-[50%] home-productosDestacados-generalBtn`}
+            className={`btn-principal ${montserrat.className} w-[75%] h-[50px] sm:w-[50%] lg:w-[25%] home-productosDestacados-generalBtn`}
           >
-            <Link className="w-full h-full" href="/#productos">
+            <Link
+              className="w-full h-full flex justify-center items-center "
+              href="/#productos"
+            >
               Todos nuestros productos
             </Link>
           </button>
@@ -634,6 +638,7 @@ export default function Home() {
         spanSubtitle="estas buscando,"
         data={productosHogar}
       />
+      <PolifosfatoComponent />
       <HistoriaComponent items={diferencialesDeLaEmpresa} />
       <SobreNosotros
         titulo="Elegís Confianza."

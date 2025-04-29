@@ -1,65 +1,39 @@
 import ProductPage from "@/components/ProductPage";
 import React from "react";
 
-const ablandadoresAutomaticosDeAgua = {
-  imagen: "/images/DetalleDeProducto/-imagen-producto.png",
-  categoria: "Válvulas de control",
-  audio: "",
-  subcategoria: "",
-  titulo: "",
-  descripcion: "",
+const flowSwitch = {
+  imagen: "/images/DetalleDeProducto/flow-switch-imagen-producto.png",
+  categoria: "Instrumentación y control",
+  audio: "/audios/audio-automatizacion (2).mp4",
+  subcategoria: "Flow Switch",
+  titulo: "Flow Switch",
+  descripcion:
+    "El flow switch es un componente esencial para garantizar el correcto funcionamiento de tus sistemas de ablandamiento, filtración y purificación de agua. Detecta el flujo de líquido en las tuberías y activa o desactiva equipos como bombas, válvulas o alarmas, protegiendo tus instalaciones ante caídas o interrupciones del caudal.",
   tableHeaders: [
     "Modelo",
-    "Tipo de refrigeración",
-    "Entrada/Salida",
-    "Medida de tanque",
-    "Cant. de resina",
-    "Tanque Salero",
+    "Tensión AC/DC",
+    "Conexión",
+    "Máx temp.",
+    "Máx presión",
+    "Paleta",
   ],
   tableData: [
     {
       id: 1,
-      propiedades: [
-        "Runxin F63C1",
-        "Tiempo",
-        "1",
-        "8x44”",
-        "25 lts.",
-        "50 lts",
-      ],
+      propiedades: ["HFS-20", "220V", 'M 1"', "100°C", "10BAR", "Acero Inox."],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Flow%20Switch%20HFS-20,%20cuál%20es%20el%20precio?%20Gracias.",
     },
     {
       id: 2,
       propiedades: [
-        "Runxin F63C3",
-        "Volumen",
-        "1",
-        "8x44”",
-        "25 lts.",
-        "50 lts",
+        "FS-14",
+        "24V/220V",
+        'Tubo/Tubo 1/4"',
+        "50°C",
+        "10BAR",
+        "-",
       ],
-    },
-    {
-      id: 3,
-      propiedades: [
-        "Runxin F63C1",
-        "Tiempo",
-        "1",
-        "10x54”",
-        "50 lts.",
-        "75 lts",
-      ],
-    },
-    {
-      id: 4,
-      propiedades: [
-        "Runxin F63C3",
-        "Volumen",
-        "1",
-        "10x54”",
-        "50 lts.",
-        "75 lts",
-      ],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Flow%20Switch%20FS-14,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };
@@ -67,12 +41,12 @@ const ablandadoresAutomaticosDeAgua = {
 export default function FlowSwitchPage() {
   return (
     <ProductPage
-      audio={ablandadoresAutomaticosDeAgua.audio}
-      titulo={ablandadoresAutomaticosDeAgua.titulo}
-      imagen={ablandadoresAutomaticosDeAgua.imagen}
-      tableHeaders={ablandadoresAutomaticosDeAgua.tableHeaders}
-      tableData={ablandadoresAutomaticosDeAgua.tableData}
-      descripcion={ablandadoresAutomaticosDeAgua.descripcion}
+      audio={flowSwitch.audio}
+      titulo={flowSwitch.titulo}
+      imagen={flowSwitch.imagen}
+      tableHeaders={flowSwitch.tableHeaders}
+      tableData={flowSwitch.tableData}
+      descripcion={flowSwitch.descripcion}
     ></ProductPage>
   );
 }

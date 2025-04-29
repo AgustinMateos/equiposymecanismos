@@ -7,7 +7,7 @@ const ablandadoresAutomaticosDeAgua = {
   categoria: "Válvulas de control",
   subcategoria: "Válvulas de control para ablandamiento",
   titulo: "Válvulas de control para ablandamiento",
-  audio: "audio",
+  audio: "",
   descripcion:
     "Las válvulas de control automáticas Runxin son componentes esenciales en sistemas de tratamiento del agua, diseñadas para regular y automatizar el flujo de agua y las operaciones de regeneración en equipos como ablandadores y filtros. Fabricadas con materiales durables y resistentes a la corrosión, estas válvulas incorporan tecnología avanzada de control electrónico. Típicamente cuentan con una pantalla digital para la programación y monitoreo, múltiples puertos para las diferentes etapas del ciclo de tratamiento y un motor paso a paso para un control preciso del posicionamiento de la válvula.",
   tableHeaders: [

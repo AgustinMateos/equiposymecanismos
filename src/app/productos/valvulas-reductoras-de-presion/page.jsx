@@ -4,7 +4,7 @@ import React from "react";
 const ablandadoresAutomaticosDeAgua = {
   imagen: "/images/DetalleDeProducto/-imagen-producto.png",
   categoria: "Válvulas de control",
-  audio: "",
+  audio: "/audios/audio-automatizacion (2).mp4",
   subcategoria: "",
   titulo: "",
   descripcion: "",

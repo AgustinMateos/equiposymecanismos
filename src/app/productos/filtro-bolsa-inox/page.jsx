@@ -5,7 +5,7 @@ const filtroBolsaInox = {
   imagen: "/images/DetalleDeProducto/filtro-bolsa-inox-imagen-producto.png",
   categoria: "Filtración",
   subcategoria: "Filtro Bolsa Inox",
-  audio: "audio",
+  audio: "/audios/audio-filtros-tipo-bolsa.mp4",
   titulo: "Filtro bolsa inox",
   descripcion:
     "Los filtros bolsa están construidos íntegramente en acero inoxidable, con altura regulable y fácil conexión. Los mismos se caracterizan por su alta capacidad de retención de partículas y grandes caudales de filtración.",
@@ -37,6 +37,7 @@ const filtroBolsaInox = {
 export default function FiltroBolsaInoxPage() {
   return (
     <ProductPage
+      audio={filtroBolsaInox.audio}
       titulo={filtroBolsaInox.titulo}
       imagen={filtroBolsaInox.imagen}
       tableHeaders={filtroBolsaInox.tableHeaders}

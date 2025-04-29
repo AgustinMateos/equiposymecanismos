@@ -4,7 +4,7 @@ import React from "react";
 const generadoresDeOzono = {
   imagen: "/images/DetalleDeProducto/generador-de-ozono.png",
   categoria: "Desinfección",
-  audio: "audio",
+  audio: "/audios/audio-equipos-ozonizadores.mp4",
   subcategoria: "Generadores de Ozono(03)",
   titulo: "Generadores de Ozono(O3)",
   descripcion:
