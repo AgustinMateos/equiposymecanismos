@@ -634,7 +634,7 @@ export default function Home() {
       <ProductosComponent
         title="Productos para el "
         spanTitle="hogar y la industria"
-        subTitle="Encontrá la solución que "
+        subTitle="Encontrá la solución que  "
         spanSubtitle="estas buscando,"
         data={productosHogar}
       />
