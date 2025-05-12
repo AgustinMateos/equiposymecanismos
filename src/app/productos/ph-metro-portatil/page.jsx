@@ -3,67 +3,18 @@ import React from "react";
 
 const ablandadoresAutomaticosDeAgua = {
   imagen: "/images/DetalleDeProducto/-imagen-producto.png",
-  categoria: "Válvulas de control",
-  audio: "/audios/audio-automatizacion (2).mp4",
-  subcategoria: "",
-  titulo: "",
-  descripcion: "",
-  tableHeaders: [
-    "Modelo",
-    "Tipo de refrigeración",
-    "Entrada/Salida",
-    "Medida de tanque",
-    "Cant. de resina",
-    "Tanque Salero",
-  ],
+  categoria: "",
+  audio: "",
+  subcategoria: "pH-metro portátil",
+  titulo: "pH-metro portátil",
+  descripcion:
+    "El pH-metro portátil es la herramienta ideal para controlar de forma rápida y precisa el nivel de acidez o alcalinidad del agua. Compacto, liviano y fácil de usar, es perfecto para aplicaciones domésticas, comerciales e industriales. Ideal para acuarios, piscinas, sistemas de filtrado o procesos de tratamiento de agua. Un pH equilibrado es clave para la salud de tus instalaciones y equipos.",
+  tableHeaders: ["Modelo", "Medición"],
   tableData: [
     {
       id: 1,
-      propiedades: [
-        "Runxin F63C1",
-        "Tiempo",
-        "1",
-        "8x44”",
-        "25 lts.",
-        "50 lts",
-      ],
-      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
-    },
-    {
-      id: 2,
-      propiedades: [
-        "Runxin F63C3",
-        "Volumen",
-        "1",
-        "8x44”",
-        "25 lts.",
-        "50 lts",
-      ],
-      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
-    },
-    {
-      id: 3,
-      propiedades: [
-        "Runxin F63C1",
-        "Tiempo",
-        "1",
-        "10x54”",
-        "50 lts.",
-        "75 lts",
-      ],
-      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
-    },
-    {
-      id: 4,
-      propiedades: [
-        "Runxin F63C3",
-        "Volumen",
-        "1",
-        "10x54”",
-        "50 lts.",
-        "75 lts",
-      ],
-      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
+      propiedades: ["PH-P", "pH"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:pH-metro%20portatil%20PH-P,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };

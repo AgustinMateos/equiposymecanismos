@@ -4,7 +4,7 @@ import React from "react";
 const ablandadoresAutomaticosDeAgua = {
   imagen: "/images/DetalleDeProducto/manometro-inferior-imagen-producto.png",
   categoria: "Válvulas de control",
-  audio: "/audios/audio-automatizacion (2).mp4",
+  audio: "/audios/audio-automatizacion.mp4",
   subcategoria: "Manómetro inferior",
   titulo: "Manómetro inferior",
   descripcion:

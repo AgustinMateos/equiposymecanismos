@@ -46,14 +46,14 @@ export default function RepuestosParaCarcasasPage() {
       descripcion={repuestosParaCarcasas.descripcion}
     >
       <div>
-        <div className="w-full h-[300px] flex justify-start items-start gap-[50px] px-40">
+        <div className="w-full flex justify-start items-start gap-[50px] px-40">
           {/* <div className="w-[50%] flex flex-col justify-start items-start">
             <h3 className="font-bold text-2xl mb-2">Descripción</h3>
             <p>
               
             </p>
           </div> */}
-          <div className="w-[50%] flex flex-col justify-center items-start">
+          <div className="w-full flex flex-col justify-center items-start">
             <h3 className="font-bold text-2xl mb-2">Ventajas</h3>
             <p>
               Se caracterizan por su alta capacidad de retención de partículas y

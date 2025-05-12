@@ -7,7 +7,8 @@ const mangueras = {
   subcategoria: "Mangueras",
   audio: "",
   titulo: "Mangueras",
-  descripcion: "Mangueras",
+  descripcion:
+    "Nuestras mangueras están diseñadas para garantizar un flujo constante y sin fugas en sistemas de filtrado, ablandamiento y dosificación de agua. Fabricadas con materiales resistentes a la presión y a productos químicos, son ideales tanto para uso doméstico como industrial.",
   tableHeaders: ["Modelo", "Sección", "Presión máxima"],
   tableData: [
     {

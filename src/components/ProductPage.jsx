@@ -73,6 +73,9 @@ export default function ProductPage({
   imagen,
   audio,
 }) {
+  console.log("TableData: ", tableData);
+  console.log("TableHeaders: ", tableHeaders);
+
   const audioRef = useRef(null);
 
   const handlePlay = () => {
@@ -149,48 +152,50 @@ export default function ProductPage({
             </div>
           </div>
         </div>
-        <div className="w-full h-auto pb-10 px-5 md:px-20 mb-10">
-          <h2
-            className={`w-full text-left text-[#60AFFF] text-3xl font-bold mb-5 ${montserrat.className}`}
-          >
-            Modelos y características
-          </h2>
-          <div className="w-full flex justify-center items-center">
-            <table
-              className={`w-full rounded-xl tabla-productos-especificaciones ${montserrat.className}`}
+        {tableData.length == 0 || tableHeaders.length == 0 ? null : (
+          <div className="w-full h-auto pb-10 px-5 md:px-20 mb-10">
+            <h2
+              className={`w-full text-left text-[#60AFFF] text-3xl font-bold mb-5 ${montserrat.className}`}
             >
-              <thead className="bg-[#60AFFF] rounded-xl py-2">
-                <tr className="py-2 text-[10px] sm:text-[14px]">
-                  {tableHeaders.map((header, index) => (
-                    <th className="py-2 rounded-[5px]" key={index}>
-                      {header}
-                    </th>
-                  ))}
-                  <th className="py-2 rounded-[5px]">Acciones</th>
-                </tr>
-              </thead>
-              <tbody className="sm:text-[14px] text-[10px]">
-                {tableData.map((data, index) => (
-                  <tr key={index}>
-                    {data.propiedades.map((propiedad, index) => (
-                      <td className="text-center py-2" key={index}>
-                        {propiedad}
-                      </td>
+              Modelos y características
+            </h2>
+            <div className="w-full flex justify-center items-center">
+              <table
+                className={`w-full rounded-xl tabla-productos-especificaciones ${montserrat.className}`}
+              >
+                <thead className="bg-[#60AFFF] rounded-xl py-2">
+                  <tr className="py-2 text-[10px] sm:text-[14px]">
+                    {tableHeaders.map((header, index) => (
+                      <th className="py-2 rounded-[5px]" key={index}>
+                        {header}
+                      </th>
                     ))}
-                    <td className="text-center py-2">
-                      <Link
-                        className="text-[#60AFFF] underline"
-                        href={data.link}
-                      >
-                        Comprar
-                      </Link>
-                    </td>
+                    <th className="py-2 rounded-[5px]">Acciones</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody className="sm:text-[14px] text-[10px]">
+                  {tableData.map((data, index) => (
+                    <tr key={index}>
+                      {data.propiedades.map((propiedad, index) => (
+                        <td className="text-center py-2" key={index}>
+                          {propiedad}
+                        </td>
+                      ))}
+                      <td className="text-center py-2">
+                        <Link
+                          className="text-[#60AFFF] underline"
+                          href={data.link}
+                        >
+                          Comprar
+                        </Link>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
+        )}
       </div>
       {children == undefined || children == null ? null : (
         <>

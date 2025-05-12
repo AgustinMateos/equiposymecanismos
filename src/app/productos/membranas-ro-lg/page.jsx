@@ -124,6 +124,7 @@ const membranasRoLg = {
 export default function MembranasRoLGPage() {
   return (
     <ProductPage
+      audio={membranasRoLg.audio}
       titulo={membranasRoLg.titulo}
       imagen={membranasRoLg.imagen}
       tableHeaders={membranasRoLg.tableHeaders}

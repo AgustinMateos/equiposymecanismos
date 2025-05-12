@@ -25,7 +25,7 @@ export default function ProductsPageLayout({ children }) {
       <Navbar bgColorMovement="bg-[#2A5AA7]" bgColorStatic="bg-[#2A5AA7]" />
       {children}
       <Link
-        href="https://wa.me/5731335678"
+        href="https://wa.me/541158085500"
         className="fixed bottom-5 right-5 flex justify-center items-center"
       >
         <img

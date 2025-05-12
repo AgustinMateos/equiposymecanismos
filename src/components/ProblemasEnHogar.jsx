@@ -63,7 +63,7 @@ export default function ProblemasEnHogar({ items }) {
         Problemáticas comunes
       </h3>
 
-      <div className="problematicasComunes-problemas-container w-full px-5 sm:px-20 flex flex-col md:flex-row justify-center items-center gap-[50px] 2xl:gap-[20px] 2xl:w-[80%]">
+      <div className="problematicasComunes-problemas-container w-full px-5 sm:px-0 flex flex-col md:flex-row justify-center items-start gap-[50px] 2xl:gap-[20px] 2xl:w-[80%]">
         {items.map((item) => (
           <div
             key={item.id}
@@ -75,13 +75,13 @@ export default function ProblemasEnHogar({ items }) {
             <p className="w-full text-left md:text-[14px] text-[18px] mb-5 text-black">
               {item.text}
             </p>
-            <ul className="w-full flex flex-col justify-start items-start gap-[10px]">
+            {/* <ul className="w-full flex flex-col justify-start items-start gap-[10px]">
               {item.productosRelacionados.map((producto, i) => (
                 <li className="md:list-disc" key={i}>
                   {producto}
                 </li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         ))}
       </div>

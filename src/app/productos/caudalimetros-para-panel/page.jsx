@@ -7,7 +7,7 @@ const caudalimetrosParaPanel = {
   categoria: "Instrumentación y control",
   subcategoria: "Caudalímetros para panel",
   titulo: "Caudalímetros para panel",
-  audio: "/audios/audio-automatizacion (2).mp4",
+  audio: "/audios/audio-automatizacion.mp4",
   descripcion:
     "Controlá de forma clara y precisa el caudal de agua desde un tablero o panel de control. Este tipo de caudalímetro se monta externamente y permite visualizar el flujo en tiempo real, ideal para sistemas de filtrado, ósmosis o dosificación. Su diseño práctico facilita el monitoreo y ajuste de procesos tanto en aplicaciones domésticas como industriales.Visualización directa para un control eficiente.",
   tableHeaders: ["Modelo", "Galones por minuto", "Rosca"],

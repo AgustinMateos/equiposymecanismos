@@ -7,7 +7,8 @@ const repuestosDeEsterilizadores = {
   audio: "",
   subcategoria: "Repuestos de esterilizadores UV",
   titulo: "Repuestos de esterilizadores UV",
-  descripcion: "",
+  descripcion:
+    "Asegurá el rendimiento óptimo de tu sistema de desinfección con nuestros repuestos para esterilizadores UV. Contamos con lámparas, mangas de cuarzo, reactores y balastros compatibles con los modelos más utilizados del mercado.",
   tableHeaders: ["Modelo", "Compatible con:"],
   tableData: [
     {

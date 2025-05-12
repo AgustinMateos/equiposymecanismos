@@ -44,11 +44,11 @@ export default function FiltroBolsaInoxPage() {
       tableData={filtroBolsaInox.tableData}
       descripcion={filtroBolsaInox.descripcion}
     >
-      <div>
-        <div className="w-full h-[300px] flex justify-start items-start gap-[50px] px-20">
-          <div className="w-[50%] flex flex-col justify-center items-start">
+      <div className="w-full flex justify-center items-center">
+        <div className="w-full h-[300px] flex justify-start items-start gap-[50px] px-50">
+          <div className="w-full flex flex-col justify-center items-start">
             <h3 className="font-bold text-2xl mb-2">Ventajas</h3>
-            <p>
+            <p className="w-full">
               Se caracterizan por su alta capacidad de retención de partículas y
               grandes caudales de filtración. Ofrecen una gran superficie de
               filtración en un espacio compacto, lo que resulta en una vida útil

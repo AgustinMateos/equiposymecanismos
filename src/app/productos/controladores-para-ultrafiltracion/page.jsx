@@ -2,68 +2,20 @@ import ProductPage from "@/components/ProductPage";
 import React from "react";
 
 const ablandadoresAutomaticosDeAgua = {
-  imagen: "/images/DetalleDeProducto/-imagen-producto.png",
-  categoria: "Válvulas de control",
-  audio: "/audios/audio-automatizacion (2).mp4",
-  subcategoria: "",
-  titulo: "",
-  descripcion: "",
-  tableHeaders: [
-    "Modelo",
-    "Tipo de refrigeración",
-    "Entrada/Salida",
-    "Medida de tanque",
-    "Cant. de resina",
-    "Tanque Salero",
-  ],
+  imagen:
+    "/images/DetalleDeProducto/controlador-para-ultrafiltracion-imagen-producto.png",
+  categoria: "",
+  audio: "",
+  subcategoria: "Controladores para ultrafiltración",
+  titulo: "Controladores para ultrafiltración",
+  descripcion:
+    "Optimizá el rendimiento de tu sistema de ultrafiltración con nuestros controladores automáticos. Diseñados para manejar ciclos de filtrado, retrolavado y enjuague, garantizan un funcionamiento estable y sin intervención manual. Una solución confiable para asegurar agua filtrada de calidad constante, cuidando tanto tu instalación como tu tiempo.",
+  tableHeaders: ["Modelo", "Tipo de refrigeración", "Entrada/Salida"],
   tableData: [
     {
       id: 1,
-      propiedades: [
-        "Runxin F63C1",
-        "Tiempo",
-        "1",
-        "8x44”",
-        "25 lts.",
-        "50 lts",
-      ],
-      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
-    },
-    {
-      id: 2,
-      propiedades: [
-        "Runxin F63C3",
-        "Volumen",
-        "1",
-        "8x44”",
-        "25 lts.",
-        "50 lts",
-      ],
-      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
-    },
-    {
-      id: 3,
-      propiedades: [
-        "Runxin F63C1",
-        "Tiempo",
-        "1",
-        "10x54”",
-        "50 lts.",
-        "75 lts",
-      ],
-      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
-    },
-    {
-      id: 4,
-      propiedades: [
-        "Runxin F63C3",
-        "Volumen",
-        "1",
-        "10x54”",
-        "50 lts.",
-        "75 lts",
-      ],
-      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Presostatus%20y%20Switch%20Press%20SB,%20cuál%20es%20el%20precio?%20Gracias.",
+      propiedades: ["UF-PLC", "220V", "Relé"],
+      link: "https://wa.me/541158085500?text=¡Hola!%20Me%20encuentro%20interesado%20en%20el%20producto:Controlador%20y%20para%20ultrafiltración,%20cuál%20es%20el%20precio?%20Gracias.",
     },
   ],
 };

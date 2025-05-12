@@ -5,7 +5,7 @@ const presostatusYSwitchPress = {
   imagen:
     "/images/DetalleDeProducto/presostatos-y-switch-press-imagen-producto.png",
   categoria: "Instrumentación y control",
-  audio: "/audios/audio-automatizacion (2).mp4",
+  audio: "/audios/audio-automatizacion.mp4",
   subcategoria: "Presostatus y switch press",
   titulo: "Presostatus y switch press",
   descripcion:

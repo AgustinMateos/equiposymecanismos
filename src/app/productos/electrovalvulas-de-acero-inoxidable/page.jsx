@@ -5,7 +5,7 @@ const electrovalvulasDeAceroInoxidable = {
   imagen:
     "/images/DetalleDeProducto/electrovalvula-de-acero-inoxidable-imagen-producto.png",
   categoria: "Instrumentación y control",
-  audio: "/audios/audio-automatizacion (2).mp4",
+  audio: "/audios/audio-automatizacion.mp4",
   subcategoria: "Electroválvulas de acero inoxidable",
   titulo: "Electroválvulas de acero inoxidable",
   descripcion:

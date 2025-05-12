@@ -7,7 +7,8 @@ const cartuchosRecargables = {
   subcategoria: "Cartuchos Recargables",
   titulo: "Cartuchos recargables",
   audio: "",
-  descripcion: "",
+  descripcion:
+    "Nuestros cartuchos recargables son la opción ideal para quienes buscan una solución eficiente, económica y sustentable en el tratamiento de agua. Compatibles con la mayoría de los porta filtros estándar, estos cartuchos permiten rellenarse fácilmente con el material filtrante que mejor se adapte a tus necesidades: carbón activado, resina ablandadora, polifosfato y más.",
   tableHeaders: ["Modelo", "Medida"],
   tableData: [
     {

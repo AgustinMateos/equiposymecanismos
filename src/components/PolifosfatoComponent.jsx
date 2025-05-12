@@ -40,7 +40,7 @@ export default function PolifosfatoComponent() {
           </div>
           <p className="text-gray-600 leading-relaxed">
             El polifosfato de sodio es un compuesto químico soluble en agua,
-            utilizado como agente secuestrante, es decir, que captura minerales
+            utilizado como agente pasivante, es decir, que captura minerales
             como el calcio y el magnesio, responsables de la dureza del agua. Su
             aplicación principal en el tratamiento del agua es prevenir la
             formación de sarro y la corrosión en cañerías y electrodomésticos.
@@ -91,7 +91,7 @@ export default function PolifosfatoComponent() {
         </div>
 
         {/* Beneficios para la salud */}
-        <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#00b4d8] hover:shadow-lg transition-shadow">
+        {/* <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#00b4d8] hover:shadow-lg transition-shadow">
           <div className="flex items-center mb-4">
             <div className="bg-[#e6f3f8] p-3 rounded-full mr-4">
               <Heart className="h-6 w-6 text-[#00b4d8]" />
@@ -123,7 +123,7 @@ export default function PolifosfatoComponent() {
               </span>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Modos de empleo */}
         <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-[#48cae4] hover:shadow-lg transition-shadow">

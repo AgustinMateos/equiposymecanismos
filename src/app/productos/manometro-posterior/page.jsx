@@ -5,7 +5,7 @@ const manometroPosterior = {
   imagen: "/images/DetalleDeProducto/manometro-posterior-imagen-producto.png",
   categoria: "Instrumentación y control",
   subcategoria: "Manómetro posterior",
-  audio: "/audios/audio-automatizacion (2).mp4",
+  audio: "/audios/audio-automatizacion.mp4",
   titulo: "Manómetro posterior",
   descripcion:
     "Asegura el correcto funcionamiento de tus equipos de ablandamiento y purificación de agua con nuestro manómetro posterior. Diseñado para monitorear la presión de entrada y salida en filtros, ablandadores y sistemas de ósmosis inversa, este instrumento es clave para detectar obstrucciones, variaciones de presión y garantizar un tratamiento eficiente.",

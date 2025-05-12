@@ -4,7 +4,7 @@ import React from "react";
 const flowSwitch = {
   imagen: "/images/DetalleDeProducto/flow-switch-imagen-producto.png",
   categoria: "Instrumentación y control",
-  audio: "/audios/audio-automatizacion (2).mp4",
+  audio: "/audios/audio-automatizacion.mp4",
   subcategoria: "Flow Switch",
   titulo: "Flow Switch",
   descripcion:

@@ -63,26 +63,56 @@ const solucionesGrales = [
 {
   /*--Preguntas Frecuentes Data--*/
 }
+
 const preguntasFrecuentesData = [
   {
     id: 1,
-    pregunta: "¿Cómo funcionan las entregas de los productos?",
-    respuesta: "Lorem Ipsum",
+    pregunta: "¿Qué es el sarro en el agua?",
+    respuesta:
+      "El calcio y el magnesio presentes en el agua, se unen (carbonatacion) y provocan la formación de fijaciones, roturas y deterioro de las cañerias y gritería.",
   },
   {
     id: 2,
-    pregunta: "¿En qué ciudad puedo recibir mi pedido?",
-    respuesta: "Lorem Ipsum",
+    pregunta: "¿Qué daños provoca a la salud consumir agua dura o sarrosa?",
+    respuesta:
+      "El sarro del agua puede crear cálculos en el riñón.También provoca daños en nuestra dentadura, debido a la proliferación de bacterias presentes en el.",
   },
   {
     id: 3,
-    pregunta: "¿Existen descuentos para empresas y particulares?",
-    respuesta: "Lorem Ipsum",
+    pregunta: "¿Por qué instalar un ablandador de agua?",
+    respuesta:
+      "El ablandador de agua por resinas de intercambio, es el único sistema capaz de retirar Calcio y Magnesio del agua, en tiempo real y en grandes caudales. Eso garantiza la provisión de agua totalmente blanda, con ausencia de Calcio,Magnesio y Hierro.",
   },
   {
     id: 4,
-    pregunta: "¿Cómo se manejan las devoluciones de producto por fallas?",
-    respuesta: "Lorem Ipsums",
+    pregunta: "¿Qué modelo de ablandador me conviene comprar?",
+    respuesta:
+      "Nuestros vendedores técnicos podrán asesorarte acerca del equipo ideal, considerando la prestación requerida y el tipo de agua a tratar.",
+  },
+  {
+    id: 5,
+    pregunta:
+      "¿Cuál es la diferencia entre la Sal de Polifosfato y el Ablandador de agua?",
+    respuesta:
+      "Las sales de polifosfato actuan como un pasivamente químico para calmar la acción de esos minerales nocivos. En cambio el Ablandador de agua, elimina por secuestro los minerales agresivos antes de su ingreso a tu instalación.",
+  },
+  {
+    id: 6,
+    pregunta: "¿Cómo puedo abonar mi compra?",
+    respuesta:
+      "Podes abonar por depósito bancario, transferencia directa o efectivo al retirar tu producto.",
+  },
+  {
+    id: 7,
+    pregunta: "¿Pueden enviar mi compra a domicilio?",
+    respuesta:
+      "Enviamos por ViaCargo a todo el pais,  tanto a domicilio, sucursal ViaCargo o a terminal de ómnibus más cercana.",
+  },
+  {
+    id: 8,
+    pregunta: "¿El arsénico es malo para mi salud?",
+    respuesta:
+      "Las aguas de perforación de nuestro país, pueden mostrar contenidos altos de Arsénico y otora metales pesados. El cuerpo humano no tiene la capacidad de eliminar esos contaminantes, por lo cual, su ingesta prolongada puede derivar en tumores de diferente tipo, enfermedades de la piel y problemas neurológicos. ( Ver HACRE ).Sus máximos permitidos en agua potable figuran en el Código Alimentario Argentino ( Ley 18.284 )",
   },
 ];
 
@@ -176,7 +206,7 @@ const problematicasDelHogar = [
     icon: "",
     title: "Rotura de cañerías y accesorios",
     text: "Evitá costosas reparaciones y daños en tus instalaciones con soluciones que protegen tu sistema hidráulico:",
-    productosRelacionados: ["Producto 1", "Producto 2"],
+    productosRelacionados: ["Boya Antisarro", "Carcasas"],
   },
   {
     id: 2,
@@ -190,7 +220,7 @@ const problematicasDelHogar = [
     icon: "",
     title: "Baja de presión",
     text: "Recuperá el flujo constante de agua con sistemas que optimizan la presión y mejoran el rendimiento en todo tu hogar o industria.",
-    productosRelacionados: ["Producto 1", "Producto 2"],
+    productosRelacionados: [],
   },
 ];
 
@@ -484,7 +514,7 @@ const productosHogar = [
     categoria: "Instrumentación y control",
     subcategoria: "Válvulas reductoras de presión(Inoxidable)",
     titulo: "Válvulas reductoras de presión(Inoxidable)",
-    linkHref: "/productos/repuestos-para-valvula-f116",
+    linkHref: "/productos/valvulas-reductoras-de-presion",
   },
   {
     id: 36,
@@ -492,7 +522,7 @@ const productosHogar = [
     categoria: "Instrumentación y control",
     subcategoria: "Conductímetros",
     titulo: "Conductímetros",
-    linkHref: "/productos/repuestos-para-valvula-f116",
+    linkHref: "/productos/conductimetros",
   },
   {
     id: 37,
@@ -500,7 +530,7 @@ const productosHogar = [
     categoria: "Instrumentación y control",
     subcategoria: "pH-metro portátil",
     titulo: "pH-metro portátil",
-    linkHref: "/productos/repuestos-para-valvula-f116",
+    linkHref: "/productos/ph-metro-portatil",
   },
   {
     id: 38,
@@ -508,7 +538,7 @@ const productosHogar = [
     categoria: "Instrumentación y control",
     subcategoria: "Controladores para ósmosis inversa",
     titulo: "Controladores para ósmosis inversa",
-    linkHref: "/productos/repuestos-para-valvula-f116",
+    linkHref: "/productos/controladores-para-osmosis-inversa",
   },
   {
     id: 39,
@@ -516,7 +546,7 @@ const productosHogar = [
     categoria: "Instrumentación y control",
     subcategoria: "Controladores para ultra filtración",
     titulo: "Controladores para ultra filtración",
-    linkHref: "/productos/repuestos-para-valvula-f116",
+    linkHref: "/productos/controladores-para-ultrafiltracion",
   },
   {
     id: 40,
@@ -650,7 +680,7 @@ export default function Home() {
       </div>
 
       <Link
-        href="https://wa.me/5731335678"
+        href="https://wa.me/541158085500"
         className="fixed bottom-5 right-5 flex justify-center items-center"
       >
         <img

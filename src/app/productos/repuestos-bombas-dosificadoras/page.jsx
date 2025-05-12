@@ -8,7 +8,8 @@ const repuestosBombaDosificadora = {
   audio: "",
   subcategoria: "Repuestos para bomba dosificadora",
   titulo: "Repuestos para bomba dosificadora",
-  descripcion: "",
+  descripcion:
+    "Prolongá la vida útil de tu bomba dosificadora con nuestros repuestos originales y compatibles. Contamos con kits completos y piezas individuales como diafragmas, válvulas, juntas, cuerpos de bomba y más, para garantizar un funcionamiento óptimo y sin interrupciones.",
   tableHeaders: ["Modelo", "Compatible con:"],
   tableData: [
     {
