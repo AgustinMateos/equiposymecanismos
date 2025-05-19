@@ -50,15 +50,15 @@ const productosDestacados = [
     title: "Filtro bolsa Inox",
     path: "/productos/filtro-bolsa-inox",
   },
-  {
-    id: 8,
-    image: "/images/productosDestacados/purificador-de-agua-sobremesada.png",
-    title: "Purificador sobremesada",
-    path: "/productos/purificador-sobremesada",
-  },
+  // {
+  //   id: 8,
+  //   image: "/images/productosDestacados/purificador-de-agua-sobremesada.png",
+  //   title: "Purificador sobremesada",
+  //   path: "/productos/purificador-sobremesada",
+  // },
   {
     id: 9,
-    image: "/images/productosDestacados/boya-antisarro.png",
+    image: "/images/productosDestacados/boya-antisarro.jpeg",
     title: "Boya Antisarro",
     path: "/productos/boya-antisarro",
   },
