@@ -19,19 +19,19 @@ export default function SobreNosotros({ titulo, texto }) {
             <button className="btn-principal home-productosDestacados-generalBtn w-[75%] lg:w-[45%]">
               <Link
                 className="flex justify-center items-center w-full h-full"
-                href="/#tratamientos-para-el-hogar"
+                href="/#tratamientos-para-la-industria"
               >
-                Soluciones para el hogar
+                Soluciones para la industria
               </Link>
             </button>
-            <button className="btn-terciario home-productosDestacados-generalBtn w-[75%] lg:w-[45%]">
+            {/* <button className="btn-terciario home-productosDestacados-generalBtn w-[75%] lg:w-[45%]">
               <Link
                 className="w-full h-full flex justify-center items-center"
                 href="/#tratamientos-para-la-industria"
               >
                 Soluciones para la industria
               </Link>
-            </button>
+            </button> */}
           </div>
         </div>
         <div className="md:w-[45%] w-full flex justify-center sm:justify-end items-center text-3xl md:text-4xl">

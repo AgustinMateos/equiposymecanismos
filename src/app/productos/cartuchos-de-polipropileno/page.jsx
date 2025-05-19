@@ -46,7 +46,7 @@ export default function CartuchosDePolipropilenoPage() {
       descripcion={cartuchosDePolipropileno.descripcion}
     >
       <div>
-        <div className="w-full flex justify-start items-start gap-[50px] px-40">
+        <div className="w-full flex justify-start items-start gap-[50px] px-10 md:px-40">
           {/* <div className="w-[50%] flex flex-col justify-start items-start">
             <h3 className="font-bold text-2xl mb-2">Descripción</h3>
             <p>
@@ -65,7 +65,7 @@ export default function CartuchosDePolipropilenoPage() {
             </p>
           </div>
         </div>
-        <div className="w-full flex justify-center items-center gap-[20px] px-40">
+        <div className="w-full flex justify-center items-center gap-[20px] px-10 md:px-40">
           <div className="flex w-full h-full flex-col justify-start items-start">
             <h3 className="w-full text-left font-bold text-2xl mb-2">
               Mantenimiento y reemplazo

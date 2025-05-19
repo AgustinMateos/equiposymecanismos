@@ -225,6 +225,19 @@ const ProductosComponent = ({
               >
                 Conectores y mangueras
               </li>
+              <li
+                className={
+                  activeCategory === "Osmosis Inversa"
+                    ? "productNavbar-link-active"
+                    : "productNavbar-link"
+                }
+                onClick={() => {
+                  setActiveCategory("Osmosis Inversa");
+                  filtrarProductos("Osmosis Inversa");
+                }}
+              >
+                Osmosis Inversa
+              </li>
             </ul>
           </nav>
           <div className="w-full md:justify-center flex sm:gap-[10px] gap-[15px] flex-wrap justify-center md:justify-center 2xl:justify-center items-center xl:w-[85%]">
@@ -241,7 +254,7 @@ const ProductosComponent = ({
                     <img
                       className="product-card-img"
                       src={product.imagen}
-                      alt=""
+                      alt={`Imagen de ${product.titulo}`}
                     />
                   </div>
                   <div

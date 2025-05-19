@@ -10,15 +10,15 @@ export default function PrimerComponente() {
 
   const slides = [
     {
-      title: ": soluciones para tu hogar e industria",
+      title: ": soluciones para tu industria",
       span: "Agua pura, cuidado seguro",
-      text: "Evitá daños en cañerías, electrodomésticos y agua de baja calidad. Nuestros sistemas de filtración, ablandamiento y potabilización protegen tu hogar y mejoran procesos industriales.",
+      text: "Evitá daños en cañerías, electrodomésticos y agua de baja calidad. Nuestros sistemas de filtración, ablandamiento y potabilización protegen tu salud y mejoran procesos industriales.",
       buttons: [
-        {
-          text: "Soluciones para el Hogar",
-          action: () => console.log("Ver más - Slide 1"),
-          link: "/#tratamientos-para-el-hogar",
-        },
+        // {
+        //   text: "Soluciones para el Hogar",
+        //   action: () => console.log("Ver más - Slide 1"),
+        //   link: "/#tratamientos-para-el-hogar",
+        // },
         {
           text: "Soluciones para la Industria",
           action: () => console.log("Registrarse - Slide 1"),
@@ -28,8 +28,8 @@ export default function PrimerComponente() {
     },
     {
       title: "Más de 30 años llevando agua pura a ",
-      span: " hogares e industrias",
-      text: " Brindamos soluciones que cuidan de tu familia y optimizan tu industria ahorrandote tiempo y dinero. Con años de experiencia y un equipo de especialistas, garantizamos agua pura y segura.",
+      span: " industrias",
+      text: " Brindamos soluciones que cuidan de las personas y optimizan la industria ahorrandote tiempo y dinero. Con años de experiencia y un equipo de especialistas, garantizamos agua pura y segura.",
       buttons: [
         {
           text: " Conócenos",
@@ -41,7 +41,7 @@ export default function PrimerComponente() {
     {
       title: "para un agua más pura",
       span: "Tecnología avanzada ",
-      text: "Soluciones innovadoras para el hogar y la industria. Conocé nuestros productos destacados y lleva la mejor calidad de agua a tu vida.",
+      text: "Soluciones innovadoras para la industria. Conocé nuestros productos destacados y lleva la mejor calidad de agua a tu vida.",
       buttons: [
         {
           text: "Productos destacados",

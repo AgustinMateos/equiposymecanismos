@@ -46,7 +46,7 @@ export default function CarbonActivadoPage() {
       descripcion={carbonActivadoEnBloque.descripcion}
     >
       <div className="w-full h-full text-black">
-        <div className="w-full flex flex-col justify-start items-start gap-[50px] py-5 px-40">
+        <div className="w-full flex flex-col justify-start items-start gap-[50px] py-5 px-10 md:px-40">
           <div>
             <h3 className="w-full text-left font-bold text-2xl mb-2">
               Características

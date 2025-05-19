@@ -125,7 +125,11 @@ export default function ProductPage({
             </h1>
             <div className="flex lg:flex-row flex-col gap-[50px] justify-center items-start px-0 md:px-10 py-10">
               <div className="w-full lg:w-[50%] flex flex-col justify-center items-center h-full">
-                <img src={imagen} alt="" className="mb-5" />
+                <img
+                  src={imagen}
+                  alt={`Imagen de ${titulo}`}
+                  className="mb-5 rounded-[12px]"
+                />
               </div>
 
               <div className="w-full lg:w-[50%] flex flex-col justify-center items-center">

@@ -44,7 +44,11 @@ const Slider = ({ cards }) => {
             key={index}
             className="w-4/4 sm:w-2/4 lg:w-1/4 flex-shrink-0 transition-transform duration-300 bg-white border-gray-500 rounded-lg shadow-md overflow-hidden relative"
           >
-            <img src={card.image} className="w-full h-60 object-cover" />
+            <img
+              src={card.image}
+              className="w-full h-60 object-cover"
+              alt={`Imagen de ${card.title}`}
+            />
             <div className="p-4">
               <h3
                 className={`text-[14px] text-center w-full text-[#555555] font-semibold mb-5 ${montserrat.className}`}

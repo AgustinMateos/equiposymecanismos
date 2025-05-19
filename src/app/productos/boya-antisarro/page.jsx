@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import React from "react";
 
 const boyaAntisarro = {
-  imagen: "/images/DetalleDeProducto/boya-antisarro.png",
+  imagen: "/images/productosDestacados/boya-antisarro.jpeg",
   categoria: "Dosificación",
   audio: "",
   subcategoria: "Boya antisarro",
@@ -25,7 +25,7 @@ export default function BombasDosificadorasAutomaticasPage() {
     >
       {" "}
       <div className="w-full flex justify-center items-center">
-        <div className="w-[85%] flex justify-center items-center gap-[20px]">
+        <div className="w-[85%] flex flex-col md:flex-row justify-center items-center gap-[20px]">
           <img
             className="w-[350px] h-[350px] rounded-[12px]"
             src="/images/boya-antisarro-1.jpeg"

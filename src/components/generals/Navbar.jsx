@@ -22,22 +22,22 @@ const Navbar = ({ bgColorMovement, bgColorStatic }) => {
   }, []);
   //Data para el Header
   const menuItems = [
-    { text: "Soluciones", width: "w-[100px]", link: "/#soluciones" },
-    { text: "Hogar", width: "w-[100px]", link: "/#tratamientos-para-el-hogar" },
+    { text: "Soluciones", width: "w-[140px]", link: "/#soluciones" },
+    // { text: "Hogar", width: "w-[100px]", link: "/#tratamientos-para-el-hogar" },
     {
       text: "Industrias",
-      width: "w-[120px]",
+      width: "w-[140px]",
       link: "/#tratamientos-para-la-industria",
     },
-    { text: "Productos", width: "w-[160px]", link: "/#productos" },
+    { text: "Productos", width: "w-[140px]", link: "/#productos" },
     {
       text: "Sobre nosotros",
-      width: "w-[160px]",
+      width: "w-[140px]",
       link: "/#sobre-nosotros",
     },
     {
       text: "FAQs",
-      width: "w-[120px]",
+      width: "w-[140px]",
       link: "/#preguntas-frecuentes",
     },
   ];
@@ -54,9 +54,7 @@ const Navbar = ({ bgColorMovement, bgColorStatic }) => {
       >
         <div>
           <Link href="/">
-            <h1 className="text-lg sm:text-xl font-bold">
-              Equipos y Mecanismos
-            </h1>
+            <h1 className="text-lg sm:text-xl font-bold">EQUIMEC</h1>
           </Link>
         </div>
 

@@ -46,20 +46,20 @@ export default function CarcasasPage() {
     >
       <div className="w-full h-full text-black">
         <div className="w-full flex justify-center items-center mb-[50px]">
-          <div className="w-[90%] gap-[20px] flex justify-center items-center">
+          <div className="w-[90%] gap-[20px] flex flex-col md:flex-row justify-center items-center">
             <img
               className="rounded-[12px] w-[350px] h-[350px]"
-              src="/images/carcasa-1.jpeg"
-              alt=""
+              src="/images/carcasa-1.png"
+              alt="Imagen de carcasa"
             />
             <img
               className="rounded-[12px] w-[350px] h-[350px]"
-              src="/images/carcasa-2.jpeg"
-              alt=""
+              src="/images/carcasa-2.png"
+              alt="Imagen de carcasa"
             />
           </div>
         </div>
-        <div className="w-full flex flex-col justify-start items-start gap-[50px] py-5 px-40">
+        <div className="w-full flex flex-col justify-start items-start gap-[50px] py-5 px-10 md:px-40">
           <div>
             <h3 className="w-full text-left font-bold text-2xl mb-2">Usos</h3>
             <p className="w-full text-left">

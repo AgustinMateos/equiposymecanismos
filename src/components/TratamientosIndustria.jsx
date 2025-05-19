@@ -18,7 +18,7 @@ export default function TratamientosIndustria({
           <div className="w-full">
             <img
               src="/images/tratamientosParaHogar/graficaTratamientosIndustria.png"
-              alt=""
+              alt="Imagen gráfica de tratamientos de agua para la industria"
               className="w-full h-full"
             />
           </div>

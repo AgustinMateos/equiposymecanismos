@@ -15,7 +15,6 @@ import Link from "next/link";
 import IndustriasDondeTrabajamos from "@/components/IndustriasDondeTrabajamos";
 import Slider from "@/components/Slider";
 import montserrat from "./fonts/fonts";
-import PolifosfatoComponent from "@/components/PolifosfatoComponent";
 
 //Imagenes
 
@@ -56,7 +55,7 @@ const solucionesGrales = [
     id: 5,
     icon: "/icons/solucionesGenerales/5.png",
     title: "Bacterias",
-    text: "Eliminá bacterias y asegurá agua segura para toda tu familia.",
+    text: "Eliminá bacterias y asegurá agua segura para todos los usos.",
     link: "",
   },
 ];
@@ -160,15 +159,15 @@ const productosDestacados = [
     title: "Filtro bolsa Inox",
     path: "/productos/filtro-bolsa-inox",
   },
-  {
-    id: 8,
-    image: "/images/productosDestacados/purificador-de-agua-sobremesada.png",
-    title: "Purificador sobremesada",
-    path: "/productos/purificador-sobremesada",
-  },
+  // {
+  //   id: 8,
+  //   image: "/images/productosDestacados/purificador-de-agua-sobremesada.png",
+  //   title: "Purificador sobremesada",
+  //   path: "/productos/purificador-sobremesada",
+  // },
   {
     id: 9,
-    image: "/images/productosDestacados/boya-antisarro.png",
+    image: "/images/productosDestacados/boya-antisarro.jpeg",
     title: "Boya Antisarro",
     path: "/productos/boya-antisarro",
   },
@@ -200,12 +199,12 @@ const diferencialesDeLaEmpresa = [
     text: "Todos nuestros productos están respaldados por garantía, asegurando calidad y tranquilidad en cada compra.",
   },
 ];
-const problematicasDelHogar = [
+const problematicas = [
   {
     id: 1,
     icon: "",
     title: "Rotura de cañerías y accesorios",
-    text: "Evitá costosas reparaciones y daños en tus instalaciones con soluciones que protegen tu sistema hidráulico:",
+    text: "Evitá costosas reparaciones y daños en tus instalaciones con soluciones que protegen tu sistema hidráulico.",
     productosRelacionados: ["Boya Antisarro", "Carcasas"],
   },
   {
@@ -219,7 +218,7 @@ const problematicasDelHogar = [
     id: 3,
     icon: "",
     title: "Baja de presión",
-    text: "Recuperá el flujo constante de agua con sistemas que optimizan la presión y mejoran el rendimiento en todo tu hogar o industria.",
+    text: "Recuperá el flujo constante de agua con sistemas que optimizan la presión y mejoran el rendimiento en toda tu instalación.",
     productosRelacionados: [],
   },
 ];
@@ -228,21 +227,21 @@ const industrias = [
   {
     id: 1,
     title: "Industria Alimentaria",
-    text: "Mejoramos la calidad del agua utilizada en procesos de producción, garantizando estándares higiénicos y eficiencia en equipos.",
+    text: "Mejoramos la calidad del agua utilizada en procesos de producción, garantizando estándares higiénicos y eficiencia en equipos. Trabajamos con empresas lacteas para refriferar los intercambiadores de calor en los procesos productivos y también en la inyección de plásticos.",
   },
   {
     id: 2,
     title: "Sistemas de Calefacción y Climatización",
-    text: "Prevenimos la formación de incrustaciones en calderas y sistemas de climatización, asegurando un funcionamiento óptimo y ahorro energético.",
+    text: "Prevenimos la formación de incrustaciones en calderas de todo tipo y sistemas de climatización, asegurando un funcionamiento óptimo y ahorro energético.",
   },
-  {
-    id: 3,
-    title: "Tratamiento de Aguas Residuales",
-    text: "Facilitamos la eliminación de impurezas, contribuyendo a procesos más eficientes y sostenibles.",
-  },
+  // {
+  //   id: 3,
+  //   title: "Tratamiento de Aguas Residuales",
+  //   text: "Facilitamos la eliminación de impurezas, contribuyendo a procesos más eficientes y sostenibles.",
+  // },
 ];
 
-const productosHogar = [
+const productos = [
   {
     id: 1,
     imagen: "/images/Productos/carcasa.jpg",
@@ -612,6 +611,30 @@ const productosHogar = [
     titulo: "Conectores rápidos",
     linkHref: "/productos/conectores-rapidos",
   },
+  {
+    id: 48,
+    imagen: "/images/Productos/equipo-cerrado-sin-tanque.png",
+    categoria: "Osmosis Inversa",
+    subcategoria: "Equipo cerrado sin tanque",
+    titulo: "Equipo cerrado sin tanque",
+    linkHref: "/productos/equipo-cerrado-sin-tanque",
+  },
+  {
+    id: 49,
+    imagen: "/images/Productos/equipo-abierto-con-tanque.jpeg",
+    categoria: "Osmosis Inversa",
+    subcategoria: "Equipo abierto con tanque",
+    titulo: "Equipo abierto con tanque",
+    linkHref: "/productos/equipo-abierto-con-tanque",
+  },
+  {
+    id: 50,
+    imagen: "/images/Productos/polifosfato-de-sodio.jpeg",
+    categoria: "Ablandadores de agua",
+    subcategoria: "Polifosfato de sodio",
+    titulo: "Polifosfato de sodio",
+    linkHref: "/productos/polifosfato-de-sodio",
+  },
 ];
 export default function Home() {
   return (
@@ -642,13 +665,13 @@ export default function Home() {
         </div>
       </div>
 
-      <TratamientosHogar
+      {/* <TratamientosHogar
         titulo="Soluciones eficientes para el tratamiento de agua en el hogar"
         subtitulo="Agua pura para tu hogar, bienestar para tu familia"
         texto="Nos enfocamos en ofrecerte productos que mejoran la calidad del agua que consumís a diario. Nuestro tratamiento de agua no solo elimina impurezas, sino que también cuida de tu salud, optimiza el rendimiento de tus electrodomésticos y reduce tus costos. Porque el agua pura no es solo una necesidad, es un bienestar para vos y los tuyos."
         btnText="Nuestras soluciones"
-      />
-      <ProblemasEnHogar items={problematicasDelHogar} />
+      /> */}
+      <ProblemasEnHogar items={problematicas} />
       <TratamientosIndustria
         titulo="Protege tus equipos y optimiza tu producción"
         subtitulo="Soluciones industriales para agua de calidad"
@@ -662,17 +685,17 @@ export default function Home() {
         closureText="La implementación de polifosfato de sodio en tus procesos industriales representa una inversión en eficiencia, ahorro y durabilidad. Contáctanos para conocer cómo podemos ayudarte a optimizar tus operaciones."
       />
       <ProductosComponent
-        title="Productos para el "
-        spanTitle="hogar y la industria"
+        title="Productos para "
+        spanTitle="la industria"
         subTitle="Encontrá la solución que "
-        spanSubtitle="estas buscando,"
-        data={productosHogar}
+        spanSubtitle="estás buscando,"
+        data={productos}
       />
-      <PolifosfatoComponent />
+      {/* <PolifosfatoComponent /> */}
       <HistoriaComponent items={diferencialesDeLaEmpresa} />
       <SobreNosotros
         titulo="Elegís Confianza."
-        texto="Con más de 30 años en el mercado estamos listos para ayudarte a mejorar la calidad del agua en tu hogar o industria, ofreciéndote confianza, tecnología y un servicio profesional que te respalda en todo momento. Nos dedicamos exclusivamente al tratamiento de agua, lo que nos ha permitido convertirnos en especialistas del sector, brindando atención cercana y adaptada a las necesidades de cada cliente."
+        texto="Con más de 30 años en el mercado estamos listos para ayudarte a mejorar la calidad del agua que usas, ofreciéndote confianza, tecnología y un servicio profesional que te respalda en todo momento. Nos dedicamos exclusivamente al tratamiento de agua, lo que nos ha permitido convertirnos en especialistas del sector, brindando atención cercana y adaptada a las necesidades de cada cliente."
       />
       <PreguntasFrecuentesComponent faqs={preguntasFrecuentesData} />
       <div className="flex justify-center items-center w-full">

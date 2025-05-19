@@ -45,7 +45,7 @@ export default function FiltroBolsaInoxPage() {
       descripcion={filtroBolsaInox.descripcion}
     >
       <div className="w-full flex justify-center items-center">
-        <div className="w-full h-[300px] flex justify-start items-start gap-[50px] px-50">
+        <div className="w-full h-[300px] flex justify-start items-start gap-[50px] px-10 md:px-40">
           <div className="w-full flex flex-col justify-center items-start">
             <h3 className="font-bold text-2xl mb-2">Ventajas</h3>
             <p className="w-full">

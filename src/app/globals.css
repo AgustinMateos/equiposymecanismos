@@ -376,6 +376,7 @@ table tbody tr:nth-child(even){
   .product-card-img{
     height: 130px;
     width: 100px;
+    object-fit: cover;
   }
   footer{
     height: auto;

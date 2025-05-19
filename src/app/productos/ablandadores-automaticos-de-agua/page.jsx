@@ -81,7 +81,7 @@ export default function AblandadoresDeAguaPage() {
       descripcion={ablandadoresAutomaticosDeAgua.descripcion}
     >
       <div>
-        <div className="w-full  flex justify-start items-start gap-[50px] px-40">
+        <div className="w-full  flex justify-start items-start gap-[50px] px-10 md:px-40">
           <div className="flex w-full h-full flex-col justify-start items-start">
             <h3 className="w-full text-left font-bold text-2xl mb-2">Usos</h3>
             <ul>

@@ -66,7 +66,7 @@ export default function SolucionesGrales({ solutions }) {
                   width={"50px"}
                   height={"50px"}
                   src={solucion.icon}
-                  alt=""
+                  alt="Icono de solución"
                   className="mb-4"
                 />
               </div>

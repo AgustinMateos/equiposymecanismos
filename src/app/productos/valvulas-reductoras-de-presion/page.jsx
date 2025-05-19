@@ -42,7 +42,7 @@ export default function ValvulasReductorasDePresionPage() {
       descripcion={ablandadoresAutomaticosDeAgua.descripcion}
     >
       <div className="w-full flex justify-center items-center">
-        <div className="w-full flex flex-col justify-center items-center gap-[20px] px-40">
+        <div className="w-full flex flex-col justify-center items-center gap-[20px] px-10 md:px-40">
           <div className="w-full flex flex-col justify-start items-start mb-[20px]">
             <h3 className="font-bold text-2xl mb-2">Características</h3>
             <ul>

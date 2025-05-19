@@ -28,14 +28,14 @@ const Footer = ({}) => {
                 <li className="font-bold mb-[10px]">
                   <strong>Soluciones</strong>
                 </li>
-                <li className="mb-[10px]">
+                {/* <li className="mb-[10px]">
                   <Link
                     className="nav__link"
                     href="/#tratamientos-para-el-hogar"
                   >
                     Hogar
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     className="nav__link"
@@ -86,14 +86,17 @@ const Footer = ({}) => {
                   <strong>Mail</strong>
                 </li>
                 <li className="mb-[10px]">
-                  <Link className="nav__link" href="/">
+                  <a
+                    className="nav__link"
+                    href="mailto:info@equiposymecanismos.com.ar"
+                  >
                     info@equiposymecanismos.com.ar
-                  </Link>
+                  </a>
                 </li>
                 <li className="font-bold mb-[10px]">
                   <strong>Teléfono</strong>
                 </li>
-                <li>1132879402</li>
+                <li>1158085500</li>
               </ul>
             </div>
             <div>
@@ -102,22 +105,22 @@ const Footer = ({}) => {
               </h4>
               <ul className="flex gap-[5px] justfy-center items-center w-full flex justify-center gap-[20px] items-center">
                 <motion.li variants={socialIconsVariant} whileHover="hover">
-                  <Link href="/">
+                  <a href="https://www.facebook.com/EQUIMECAR">
                     <img
                       className="footer-social-icon"
                       src="/icons/footer/facebook.png"
-                      alt=""
+                      alt="Facebook icon"
                     />
-                  </Link>
+                  </a>
                 </motion.li>
                 <motion.li variants={socialIconsVariant} whileHover="hover">
-                  <Link href="/">
+                  <a href="https://www.instagram.com/equiposymecanismos/">
                     <img
                       className="footer-social-icon"
                       src="/icons/footer/instagram.png"
-                      alt=""
+                      alt="Instagram Icon"
                     />
-                  </Link>
+                  </a>
                 </motion.li>
               </ul>
             </div>

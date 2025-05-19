@@ -53,7 +53,7 @@ export default function IndustriasDondeTrabajamos({
           <div className="w-full flex flex-col md:flex-row sm:gap-[15px] gap-[5px] justify-between items-start mb-10">
             {data.map((item, i) => (
               <div
-                className={`md:w-[30%] w-full flex flex-col justify-start items-start text-white mb-10 ${
+                className={`md:w-[48%] w-full flex flex-col justify-start items-start text-white mb-10 ${
                   isVisible ? "fade-in" : "opacity-0"
                 }`}
                 key={item.id}
@@ -65,7 +65,7 @@ export default function IndustriasDondeTrabajamos({
                   <img
                     className="w-[30px] h-[30px] mr-5"
                     src="/icons/Industrias/industrias-like-icon.png"
-                    alt=""
+                    alt="Icono"
                   />
                   <h4
                     className={`w-full h-full text-left font-bold text-[18px] sm:text-[22px] md:text-[18px] ${montserrat.className}`}
