@@ -167,7 +167,7 @@ const productosDestacados = [
   // },
   {
     id: 9,
-    image: "/images/productosDestacados/boya-antisarro.jpeg",
+    image: "/images/productosDestacados/boya-antisarro.png",
     title: "Boya Antisarro",
     path: "/productos/boya-antisarro",
   },
@@ -702,16 +702,16 @@ export default function Home() {
         <DondeEncontrarnos />
       </div>
 
-      <Link
+      <a
         href="https://wa.me/541158085500"
         className="fixed bottom-5 right-5 flex justify-center items-center"
       >
         <img
           className="w-[55px] h-[55px] whatsapp-icon"
           src="/icons/whatsapp-icon.webp"
-          alt=""
+          alt="Whats App logo imagen"
         />
-      </Link>
+      </a>
     </div>
   );
 }

@@ -132,11 +132,11 @@ export default function PrimerComponente() {
               <button
                 onClick={slides[currentSlide].buttons[0].action}
                 className={
-                  "px-4 py-2 hover:bg-gray-200 transition-colors btn-principal text-[14px]"
+                  "flex justify-center items-center hover:bg-gray-200 transition-colors btn-principal text-[14px]"
                 }
               >
                 <Link
-                  className="w-full h-full"
+                  className="w-full h-full flex justify-center items-center px-[16px] py-[8px]"
                   href={slides[currentSlide].buttons[0].link}
                 >
                   {slides[currentSlide].buttons[0].text}
@@ -145,9 +145,12 @@ export default function PrimerComponente() {
               {slides[currentSlide].buttons[1] && (
                 <button
                   onClick={slides[currentSlide].buttons[1].action}
-                  className="px-4 py-2 bg-white text-black rounded-md hover:bg-gray-200 transition-colors btn-secundario text-[14px]"
+                  className="flex justify-center items-center bg-white text-black rounded-md hover:bg-gray-200 transition-colors btn-secundario text-[14px]"
                 >
-                  <Link href={slides[currentSlide].buttons[1].link}>
+                  <Link
+                    className="flex justify-center items-center px-[16px] py-[8px]"
+                    href={slides[currentSlide].buttons[1].link}
+                  >
                     {slides[currentSlide].buttons[1].text}
                   </Link>
                 </button>

@@ -42,9 +42,12 @@ export default function TratamientosIndustria({
             </p>
             <div className="w-full flex justify-start items-center">
               <button
-                className={`btn-principal home-productosDestacados-generalBtn w-[75%] h-[50px] lg:h-[40px] sm:w-[50%] md:w-[75%] lg:w-[45%] ${montserrat.className}`}
+                className={`btn-principal flex justify-center items-center home-productosDestacados-generalBtn w-[75%] h-[50px] lg:h-[40px] sm:w-[50%] md:w-[75%] lg:w-[45%] ${montserrat.className}`}
               >
-                <Link className="w-full h-full" href="/#productos">
+                <Link
+                  className="w-full h-full flex justify-center items-center"
+                  href="/#productos"
+                >
                   {btnText}
                 </Link>
               </button>

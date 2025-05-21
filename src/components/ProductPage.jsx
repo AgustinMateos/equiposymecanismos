@@ -58,7 +58,7 @@ const productosDestacados = [
   // },
   {
     id: 9,
-    image: "/images/productosDestacados/boya-antisarro.jpeg",
+    image: "/images/productosDestacados/boya-antisarro.png",
     title: "Boya Antisarro",
     path: "/productos/boya-antisarro",
   },
@@ -119,7 +119,7 @@ export default function ProductPage({
         <div className="w-full px-6 md:px-20 pt-24 flex justify-center items-center mb-5 ">
           <div className="w-full">
             <h1
-              className={`w-full text-left text-[#60AFFF] text-4xl font-bold py-5 product-title ${montserrat.className}`}
+              className={`w-full text-left text-[#2a5aa7] text-4xl font-bold py-5 product-title ${montserrat.className}`}
             >
               {titulo}
             </h1>
@@ -133,11 +133,11 @@ export default function ProductPage({
               </div>
 
               <div className="w-full lg:w-[50%] flex flex-col justify-center items-center">
-                <h3
+                <h2
                   className={`w-full text-left font-bold text-2xl mb-5 ${montserrat.className}`}
                 >
                   Descripción del producto
-                </h3>
+                </h2>
                 <p
                   className={`${montserrat.className} mb-6 text-[14px] text-black leading-[18px]`}
                 >
@@ -250,8 +250,13 @@ export default function ProductPage({
         </h2>
         <Slider cards={productosDestacados} />
         <div className="w-full flex justify-center items-center pb-10">
-          <button className={`btn-principal ${montserrat.className}`}>
-            <Link className="w-full h-full" href="/#productos">
+          <button
+            className={`btn-principal flex justify-center items-center ${montserrat.className} `}
+          >
+            <Link
+              className="w-full h-full flex justify-center items-center py-[8px] px-[25px]"
+              href="/#productos"
+            >
               Volver a productos
             </Link>
           </button>

@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import React from "react";
 
 const boyaAntisarro = {
-  imagen: "/images/productosDestacados/boya-antisarro.jpeg",
+  imagen: "/images/productosDestacados/boya-antisarro.png",
   categoria: "Dosificación",
   audio: "",
   subcategoria: "Boya antisarro",

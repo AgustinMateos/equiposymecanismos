@@ -35,10 +35,10 @@ html{
 .btn-principal{
   border-radius: 25px;
   background-color: #60AFFF;
-  padding: 8px 25px;
   color: white;
   transition: all .2s;
   cursor: pointer;
+  height: 40px;
 }
 
 .btn-principal:hover{
