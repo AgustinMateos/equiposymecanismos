@@ -25,8 +25,8 @@ export default function EquipoCerradoSinTanquePage() {
       descripcion={equipoCerradoSinTanque.descripcion}
     >
       <div className="w-full h-full text-black">
-        <div className="w-full flex justify-center items-center mb-[50px]">
-          <div className="w-[90%] gap-[20px] flex flex-col md:flex-row justify-center items-center">
+        <div className="w-full flex flex-col justify-center items-center mb-[50px]">
+          <div className="w-[90%] gap-[20px] flex flex-col md:flex-row justify-center items-center mb-[50px]">
             <img
               className="rounded-[12px] w-[350px] h-[350px]"
               src="/images/DetalleDeProducto/equipo-cerrado-sin-tanque-imagen-producto-2.png"
@@ -37,6 +37,13 @@ export default function EquipoCerradoSinTanquePage() {
               src="/images/DetalleDeProducto/equipo-cerrado-sin-tanque-imagen-producto-3.png"
               alt="Imagen de equipo de osmosis inversa cerrado y sin tanque"
             />
+          </div>
+          <div className="w-full flex justify-center items-center mt-[20px]">
+            <video
+              className="rounded-[20px] w-[314px] height-[565px]"
+              src="/videos/equipo-cerrado-osmosis.mp4"
+              controls={true}
+            ></video>
           </div>
         </div>
       </div>
