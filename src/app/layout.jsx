@@ -19,9 +19,9 @@ export const metadata = {
   title: "EQUIMEC | Equipos y mecanismos para la purificación de agua",
   description:
     "Soluciones eficaces para la purificación y ablandamiento del agua. Protegé tus cañerías y electrodomésticos con nuestros sistemas de tratamiento.",
-  // other: {
-  //   "google-site-verification": "TU-CODIGO-DE-VERIFICACION",
-  // },
+  other: {
+    "google-site-verification": "BuDXj6rCWSUzzkoE7y2e9XPpMY8KH52MbFu3di_4fiY",
+  },
 };
 
 export default function RootLayout({ children }) {
