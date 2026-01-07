@@ -638,7 +638,7 @@ const productos = [
 ];
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#FFFFFF]">
       <PrimerComponente />
       <SolucionesGrales solutions={solucionesGrales} />
       <div
