@@ -635,6 +635,14 @@ const productos = [
     titulo: "Polifosfato de sodio",
     linkHref: "/productos/polifosfato-de-sodio",
   },
+  {
+    id: 51,
+    imagen: "/images/Productos/dmi-65-quantum-australia.png",
+    categoria: "Resinas y lechos",
+    subcategoria: "Lecho filtrante DMI-65®",
+    titulo: "DMI-65® de Quantum Australia",
+    linkHref: "/productos/dmi-65-quantum-australia",
+  },
 ];
 export default function Home() {
   return (
