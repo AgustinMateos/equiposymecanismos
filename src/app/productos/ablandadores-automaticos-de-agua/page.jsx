@@ -97,7 +97,7 @@ export default function AblandadoresDeAguaPage() {
               </li>
               <li className="list-disc">
                 <strong>Residenciales:</strong> Termotanques, calderas,
-                lavarropas, lavavajillas, griferías, vajilla, etc.
+                lavarropas, lavavajillas, griferías, vajilla, etc. 
               </li>
             </ul>
           </div>
