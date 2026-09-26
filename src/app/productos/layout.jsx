@@ -23,7 +23,7 @@ export const metadata = {
 
 export default function ProductsPageLayout({ children }) {
   return (
-    <>
+    <div className="bg-[#FFFFFF]">
       <Navbar bgColorMovement="bg-[#2A5AA7]" bgColorStatic="bg-[#2A5AA7]" />
       {children}
       <Link
@@ -36,6 +36,6 @@ export default function ProductsPageLayout({ children }) {
           alt=""
         />
       </Link>
-    </>
+    </div>
   );
 }

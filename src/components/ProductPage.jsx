@@ -114,7 +114,7 @@ export default function ProductPage({
   }, []);
 
   return (
-    <section className="w-full flex flex-col justify-center items-center">
+    <section className="w-full flex flex-col justify-center items-center bg-[#FFFFFF]">
       <div className="max-w-[1500px] justify-center items-center flex flex-col w-full">
         <div className="w-full px-6 md:px-20 pt-24 flex justify-center items-center mb-5 ">
           <div className="w-full">
